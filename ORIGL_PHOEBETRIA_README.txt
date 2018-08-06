@@ -91,7 +91,7 @@ https://sourceforge.net/projects/phoebetria/
 
 License
 =======
-Copyright © 2012 by Craig Robbins and Christopher Ferris.
+Copyright Â© 2012 by Craig Robbins and Christopher Ferris.
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the
