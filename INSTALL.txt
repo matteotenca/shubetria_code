@@ -1,0 +1,129 @@
+                 
+                               Phoebetria
+
+              Software for controlling the BitFenix(R) Recon
+                              fan controller.
+                        
+               (C) 2012 by Craig Robbins and Christopher Ferris
+                        phoebetria.software@gmail.com
+                          http://www.phoebetria.com
+                        
+                               INSTALLATION
+
+
+1. Binary versions
+===================
+
+1.1 Microsoft Windows
+---------------------
+
+The Windows build is distributed as a zip file containing the executable 
+and required libraries. Simply decompress the zip file to a location of 
+your choice and double-click Phoebetria.exe to launch the application. 
+
+To uninstall, simply delete the folder that you decompressed the zip 
+file into. Phoebetria does not modify the Windows registry so there is 
+no cleaning up to do there. If you want to delete settings (such as 
+saved profiles) they are saved in: 
+
+Vista/Windows 7: C:\Users\{name}\AppData\Roaming\Phoebetria
+Windows XP:      C:\Documents and Settings\{name}\Phoebetria 
+
+Replace C: with your system drive if necessary and {name} with your 
+windows login name. 
+
+
+1.2 OS X
+--------
+The OS X build is distributed as a standard OS X Disk Image or .DMG 
+file. Simply open the DMG file using Finder or Disk Utility and drag the 
+Phoebetria.app to your Applications folder then double-click to open. 
+
+The settings and profiles are stored in your $HOME/.config/Phoebetria 
+folder. By default this folder is hidden in Finder but you can go there 
+freely via the "Terminal.app" application or in Finder use the key 
+combination Command + Shift + G and paste in the path. 
+
+To uninstall this software simply drag the application to your "Trash" 
+icon or in Finder use the key combination Command + Delete. 
+
+
+1.3 Linux
+---------
+
+Fedora:
+  The Fedora build is distributed as a standard RedHat package or .RPM
+  file.  To install this application simply download the latest rpm,
+  launch your terminal application of choice and execute the following
+  commands as desired.
+
+  To Install:
+  sudo yum localinstall /{pathtodownload}/Phoebetria-{version}.fc17.x86_64.rpm --nogpg
+  or
+  sudo rpm --install /{pathtodownload}/Phoebetria-{version}.fc17.x86_64.rpm
+
+  To Upgrade:
+  sudo yum update /{pathtodownload}/Phoebetria-{version}.fc17.x86_64.rpm
+  or
+  sudo rpm --upgrade /{pathtodownload}/Phoebetria-{version}.fc17.x86_64.rpm
+
+  To Remove:
+  sudo yum remove phoebetria
+  or
+  sudo rpm --erase phoebetria
+
+  The settings and profiles are stored in your $HOME/.config/Phoebetria 
+  folder. By default this folder is hidden in Nautilus (Files) but you can
+  go there freely via the Terminal application or in Nautilus (Files) use
+  the key combination Control + L and paste in the path.
+
+1.4 Debian
+---------
+
+Ubuntu:
+  The Ubuntu build is distributed as a standard Debian package or .deb file.
+  This package has been tested on both Ubuntu and Mint and to install this
+  application simply download the latest .deb, launch your terminal
+  application of choice and execute the following commands as desired. 
+
+  To Install:
+  sudo dpkg -i /{pathtodownload}/Phoebetria-debian-x86_64-{version}.deb
+
+  To Remove:
+  sudo dpkg -r phoebetria
+
+  The settings and profiles are stored in your $HOME/.config/Phoebetria 
+  folder. By default this folder is hidden in Nautilus (Files) but you can
+  go there freely via the Terminal application or in Nautilus (Files) use
+  the key combination Control + L and paste in the path.
+  
+2. Compiling from source
+========================
+
+    Make
+    ----
+    a) Download the source package and decompress it
+    b) cd to the source folder
+    c) qmake && make
+    d) The file "99-fancontroller.rules" must be copied to
+       /etc/udev/rules.d/ 
+       Note: If you already have a file called
+       "99-fancontroller.rules" in /etc/udev/rules.d/ then edit the file
+       and add the rule manually.
+    e) Restart the udev system so the new rule is loaded
+       (reboot if you're not sure)
+    f) The rule in "99-fancontroller.rules" gives permission to read the
+       Recon USB device to users belonging to the group "fancontrollers".
+       Create the group if necessary and add yourself to the group.
+       Without this step Phoebetria will not have access to the Recon's
+       USB connection. 
+       
+    *Note: qmake may be renamed on your system (for example, qmake-qt4)
+    
+    Requirements
+    ------------
+    Qt and Qt development files (Qt 4)
+    libudev and development files
+    libusb-1.0 and development files
+    gcc
+    

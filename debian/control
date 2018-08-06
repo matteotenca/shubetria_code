@@ -1,0 +1,19 @@
+Source: phoebetria
+Section: misc
+Priority: extra
+Maintainer: Christopher Ferris (Phoebetria.com) <cwferis@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), libqt4-dev (>= 4.8), qt4-qmake (>= 4.8), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libudev-dev (>= 147), libusb-1.0-0-dev, pkg-config
+Standards-Version: 3.9.2
+Homepage: http://www.phoebetria.com
+#Vcs-Git: git://git.debian.org/collab-maint/phoebetria.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/phoebetria.git;a=summary
+
+Package: phoebetria
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Software control for the BitFenix Recon fan controller
+ Phoebetria lets you take control of your BitFenix Recon fan controller on more operating systems
+ than the official software. It offers all of the same features as the official software, with the
+ exception of remote access, and has been tested on Windows, Linux, and OS X. The current plan is
+ that future releases will add functionality and control that the official software does not
+ provide — giving you even more control over your fans.

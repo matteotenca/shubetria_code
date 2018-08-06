@@ -1,0 +1,127 @@
+﻿                               
+                               Phoebetria
+
+              Software for controlling the BitFenix(R) Recon
+                              fan controller.
+                        
+               (C) 2012 by Craig Robbins and Christopher Ferris
+                        phoebetria.software@gmail.com
+                          http://www.phoebetria.com
+                        
+                                CHANGE LOG
+Version 1.4
+08-Mar-2013
+====================
+This will be the last major release for the 1.x series of Phoebetria so
+we can focus on version 2.x development.  The release focused on adding
+some of the features users requested.  The most significant change we've
+made is localization.  Phoebetria can now be translated into any language
+and German has already been added thanks to Akron from our forums. 
+The newly added Help Menu was added after the German translation so
+that, unfortunately, remains English only at the moment. 
+
+* Diagnostic Report - Accessible through the help menu, builds a report
+  of the various hardware and software related to Phoebetria.
+* Channel Labels - Display's the channel names in the main interface
+  with the names set in preferences.
+* Help Menu - describes the functions and settings through out the
+  application.
+* Window Geometry - Saves the window sizes and locations for all 
+  windows.
+* Many general improvements
+
+Version 1.3.1
+27-Dec-2012
+====================
+This is a minor release, however users of software auto are strongly 
+encouraged to upgrade (two bug fixes are related to software auto).
+In addition to bug fixes, quick load menus for profiles were added: 
+one on the main menu and another as a context menu when minimized to
+tray. 
+
+* Fixed bug setting probe affinity in the GUI
+* Added Qt Version to the about dialog
+* Removed Status bar from the main dialog
+* Menus are now added programatically
+* Added "More..." option to Load Profile menus if the number of 
+  profiles > 9
+* Added "Load Profile" sub-menu to File menu
+
+Version 1.3
+21-Dec-2012
+====================
+This is a major feature release and is a direct result of the solid 
+framework built into the previous releases. We’ve included a new 
+preference panel that allows you to set some basic environment settings, 
+name fans and temperatures, set startup and shutdown profiles and use 
+custom themes. If you know how to write custom stylesheets for the web 
+then creating your own custom themes will be familiar. The RPM 
+indicators have been modified to move with the current rpm until they 
+reach their target RPM. The RPM sliders now use a logarithmic scale 
+instead of the previous linear scale; this can be toggled in 
+preferences. Software auto has been tweaked to operate more smoothly
+and reliably, and finally the usual bug fixes.
+
+Version 1.2.1
+12-Dec-2012
+====================
+This is a bug fix release. Due to the nature of some of the bugs it is 
+highly recommended that all users upgrade to this version if they are 
+using version 1.2.0. Stability and usability has been improved. The 
+internal state of Phoebetria is now reset after the system goes through 
+a sleep/wake cycle. Occasional 'freezing' of the UI has been addressed. 
+Software auto has been improved. Phoebetria can once again work 
+correctly with the OEM software still running. 
+
+Known issues: It would be desirable that if Phoebetria is running in SW 
+Auto mode that when the OS is shut down (not sleep/suspend) it sets the 
+Recon to (hardware) auto mode. Unfortunately if Phoebetria is minimised 
+to tray this does not happen. This is being worked on and is likely to 
+be fixed in V1.3. 
+
+
+Version 1.2.0
+====================
+It took some time but we feel Phoebetria has finally matured to a 
+non-beta status. There are two significant changes packed into this 
+release. The first is software auto. This feature takes the Recon's auto 
+mode a step further by allowing you to setup your own fan curves. The 
+second feature involves the way profiles are saved. We've moved away 
+from .ini files to a SQLite database for greater flexibility. The first 
+time you launch this version your old profiles will be imported 
+automatically. 
+
+Other changes include: Cleaning up the GUI to maximize space and make it 
+more intuitive; while in manual mode, clicking the RPM button opens a 
+window for an alternative way to set the RPM; clicking the channel icon 
+will change the Recon's display to show that channel's settings. 
+
+
+Version 1.1.1 (Beta)
+====================
+Although this is a "point release" many changes and improvements have 
+been incorporated. Behind the scenes the code is more efficient. These 
+efficiency gains mean that, from a user perspective, the GUI is more 
+responsive and many bugs have been fixed. The GUI has been polished and 
+now the controls and window properly resize themselves depending on user 
+settings and the user environment. Additionally, when setting a manual 
+RPM using the RPM sliders, the sliders now 'lock' to the user-defined 
+RPM; if the reported RPM is not equivalent to the manual RPM an 
+indicator below the slider changes to yellow. Minimise to tray has been 
+implemented and user profiles have been improved. 
+
+This release is also a milestone. From this point onward we will be 
+adding features to Phoebetria that the OEM software does not provide. 
+
+For developers: The full change log can be obtained from the Git
+repository. 
+
+
+Version 1.1.0 (Beta)
+====================
+This version was not officially released to the public.
+
+
+Version 1.0.0 (Beta)
+====================
+Initial public release

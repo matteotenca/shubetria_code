@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Phoebetria
+Icon=phoebetria
+Exec=Phoebetria
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=System;Settings;HardwareSettings;
+X-Desktop-File-Install-Version=0.19

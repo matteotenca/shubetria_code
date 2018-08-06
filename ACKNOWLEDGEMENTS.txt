@@ -1,0 +1,28 @@
+Notice
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+Special Thanks
+In addition to thanking the creators of Qt, gcc, g++ and all the open source software we
+have used, we would like to particularly thank the following individuals, organisations
+or entities. 
+
+BitFenix® for making the Recon ;-)
+A further thanks to BitFenix® for supplying hardware for testing V1.2.0
+Alan Ott, Ludovic Rousseau and contributors for the HID API library, http://www.signal11.us/oss/hidapi
+LoneWolf for his DarkOrange theme contribution
+Chris's brother for creating the SPEC file to create RPMs
+
+Beta Testers
+Thanks to ALL of the people who have provided testing, advice, feedback and suggestions.
+Thanks especially to those listed below (in no particular order). If your name has been
+inadvertently omitted we apologise — contact us and we will add your name.
+
+* 'tealc' from Overclockers UK
+* 'BrianB' from Overclockers UK
+* Michael Jacobsen
+* 'Dealz' from the UK
+* cs2000' from the Overclockers UK
+* 'LtMatt'
+* 'Akron from Phoebetria forum'

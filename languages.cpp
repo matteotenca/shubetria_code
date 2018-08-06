@@ -1,0 +1,64 @@
+#include "languages.h"
+
+#include <QDir>
+#include <QDirIterator>
+#include <QFile>
+#include <QDebug>
+
+#include "preferences.h"
+#include "phoebetriaapp.h"
+
+Languages::Languages()
+{
+}
+
+QStringList Languages::getSupportedLanguagesList(void)
+{
+
+    QStringList supportedLanguages;
+    Languages lang;
+    supportedLanguages.clear();
+
+    QDirIterator translationFiles(":/language"
+                                  , QStringList("Phoebetria*.qm")
+                                  , QDir::Files
+                                  , QDirIterator::Subdirectories);
+
+    while (translationFiles.hasNext())
+    {
+        translationFiles.next();
+
+        QString file = translationFiles.fileName();
+        supportedLanguages.append(lang.convertFileToLanguage(file));
+    }
+
+    return supportedLanguages;
+}
+
+QString Languages::convertLanguageToFile(QString lang)
+{
+    QString language_code;
+
+    if (lang == "German")
+    {
+        language_code = "de";
+    } else if (lang == "English") {
+        language_code = "en";
+    } else {
+        language_code = "en";
+    }
+
+    QString file = QString(":/language/phoebetria_%1.qm").arg(language_code);
+
+    return file;
+}
+
+QString Languages::convertFileToLanguage(QString file)
+{
+    file.truncate(file.lastIndexOf('.'));
+    file.remove(0, file.lastIndexOf('_') +1);
+
+    QString lang = QLocale::languageToString(QLocale(file).language());
+
+    return lang;
+}

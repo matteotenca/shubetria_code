@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if ! getent group fancontroller > /dev/null; then
+    addgroup --system fancontrollers
+fi
+
+echo "********************************************************"
+echo
+echo "Make sure you add your users to the fancontrollers group"
+echo "sudo usermod -a -G fancontrollers {username}"
+echo
+echo "********************************************************"

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>help/images/preferences_appearance.png</file>
+        <file>help/images/preferences_channels.png</file>
+        <file>help/images/preferences_general.png</file>
+        <file>help/images/window_about.png</file>
+        <file>help/images/window_diagnostic.png</file>
+        <file>help/images/window_main.png</file>
+        <file>help/images/window_profile.png</file>
+        <file>help/images/window_softwareauto_advanced.png</file>
+        <file>help/images/window_softwareauto_channel.png</file>
+        <file>help/preferences_appearance.html</file>
+        <file>help/preferences_channel.html</file>
+        <file>help/preferences_general.html</file>
+        <file>help/window_about.html</file>
+        <file>help/window_diagnostic.html</file>
+        <file>help/window_main.html</file>
+        <file>help/window_profile.html</file>
+        <file>help/window_softwareauto.html</file>
+        <file>help/window_into.html</file>
+        <file>help/preferences_intro.html</file>
+    </qresource>
+</RCC>

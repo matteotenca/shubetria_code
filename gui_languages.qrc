@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>language/phoebetria_de.qm</file>
+        <file>language/phoebetria_en.qm</file>
+        <file>language/English.png</file>
+        <file>language/German.png</file>
+    </qresource>
+</RCC>

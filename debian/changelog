@@ -1,0 +1,10 @@
+phoebetria (1.4.0-1) stable; urgency=low
+   * This will be the last major release for the 1.x series of Phoebetria so
+     we can focus on version 2.x development.  The release focused on adding
+     some of the features users requested.  The most significant change we've
+     made is localization.  Phoebetria can now be translated into any language
+     and German has already been added thanks to Akron from our forums. 
+     The newly added Help Menu was added after the German translation so
+     that, unfortunately, remains English only at the moment.
+
+ -- Christopher Ferris (Phoebetria.com) <cwferis@gmail.com>  Fri, 08 Mar 2013 19:00:00 -0800
