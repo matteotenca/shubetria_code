@@ -34,31 +34,31 @@ udev.path = /etc/udev/rules.d
 udev.files += 99-fancontroller.rules
 
 icon16.path = $${ICONDIR}/16x16/apps
-icon16.files += Images/icons/16x16/phoebetria.png
+icon16.files += Images/icons/16x16/shubetria.png
 
 icon22.path = $${ICONDIR}/22x22/apps
-icon22.files += Images/icons/22x22/phoebetria.png
+icon22.files += Images/icons/22x22/shubetria.png
 
 icon32.path = $${ICONDIR}/32x32/apps
-icon32.files += Images/icons/32x32/phoebetria.png
+icon32.files += Images/icons/32x32/shubetria.png
 
 icon48.path = $${ICONDIR}/48x48/apps
-icon48.files += Images/icons/48x48/phoebetria.png
+icon48.files += Images/icons/48x48/shubetria.png
 
 icon64.path = $${ICONDIR}/64x64/apps
-icon64.files += Images/icons/64x64/phoebetria.png
+icon64.files += Images/icons/64x64/shubetria.png
 
 icon128.path = $${ICONDIR}/128x128/apps
-icon128.files += Images/icons/128x128/phoebetria.png
+icon128.files += Images/icons/128x128/shubetria.png
 
 icon256.path = $${ICONDIR}/256x256/apps
-icon256.files += Images/icons/256x256/phoebetria.png
+icon256.files += Images/icons/256x256/shubetria.png
 
 icon512.path = $${ICONDIR}/512x512/apps
-icon512.files += Images/icons/512x512/phoebetria.png
+icon512.files += Images/icons/512x512/shubetria.png
 
 pixmap.path = $${DATADIR}/pixmaps
-pixmap.files += Images/icons/48x48/phoebetria.png
+pixmap.files += Images/icons/48x48/shubetria.png
 
 coretemp.path = $${BINDIR}
 
@@ -158,7 +158,7 @@ win32 {
     INCLUDEPATH += Windows/coretemp \
                  bfx-recon/windows
     LIBS += -lsetupapi -lGetCoreTempInfo
-    QMAKE_LIBDIR += ..\\phoebetria-code\\Windows\\coretemp
+    QMAKE_LIBDIR += .\\Windows\\coretemp
     # -lGetCoreTempInfo coretemp\\GetCoreTempInfo.lib
     RC_FILE = Windows/Shubetria.rc
     CONFIG += exceptions rtti
