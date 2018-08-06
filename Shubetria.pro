@@ -157,8 +157,8 @@ win32 {
                bfx-recon/windows/fancontrollerio.h
     INCLUDEPATH += Windows/coretemp \
                  bfx-recon/windows
-    LIBS += -lsetupapi -lGetCoreTempInfo
-    QMAKE_LIBDIR += .\\Windows\\coretemp
+    LIBS += -L..\\shubetria_code\\Windows\\coretemp -lsetupapi -lGetCoreTempInfo
+    # QMAKE_LIBDIR += .\\Windows\\coretemp
     # -lGetCoreTempInfo coretemp\\GetCoreTempInfo.lib
     RC_FILE = Windows/Shubetria.rc
     CONFIG += exceptions rtti
