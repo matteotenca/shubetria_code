@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_FAN_PROFILES_H
-#define PHOEBETRIA_FAN_PROFILES_H
+#ifndef SHUBETRIA_FAN_PROFILES_H
+#define SHUBETRIA_FAN_PROFILES_H
 
 #include <QString>
 #include <QSettings>
@@ -206,4 +206,4 @@ inline QString FanControllerProfile::boolToTempScale(bool isCelcius) const
 }
 
 
-#endif // PHOEBETRIA_FAN_PROFILES_H
+#endif // SHUBETRIA_FAN_PROFILES_H

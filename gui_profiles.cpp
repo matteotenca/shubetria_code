@@ -16,7 +16,7 @@
 
 #include "gui_profiles.h"
 #include "ui_gui_profiles.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 #include <QDebug>
 #include <QMessageBox>

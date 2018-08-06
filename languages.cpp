@@ -6,7 +6,7 @@
 #include <QDebug>
 
 #include "preferences.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 Languages::Languages()
 {
@@ -20,7 +20,7 @@ QStringList Languages::getSupportedLanguagesList(void)
     supportedLanguages.clear();
 
     QDirIterator translationFiles(":/language"
-                                  , QStringList("Phoebetria*.qm")
+                                  , QStringList("Shubetria*.qm")
                                   , QDir::Files
                                   , QDirIterator::Subdirectories);
 
@@ -48,7 +48,7 @@ QString Languages::convertLanguageToFile(QString lang)
         language_code = "en";
     }
 
-    QString file = QString(":/language/phoebetria_%1.qm").arg(language_code);
+    QString file = QString(":/language/shubetria_%1.qm").arg(language_code);
 
     return file;
 }

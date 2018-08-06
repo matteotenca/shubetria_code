@@ -28,8 +28,8 @@ typedef struct
 
 enum BuiltInStyleSheets
 {
-    Phoebetria_Stylesheet_Standard,
-    Phoebetria_Stylesheet_Dark
+    Shubetria_Stylesheet_Standard,
+    Shubetria_Stylesheet_Dark
 };
 
 typedef QList<ThemeNameAndFilename> ThemeNameAndFilenameList;
@@ -49,8 +49,8 @@ public:
 
     inline static QString prependPath(const QString& filename);
 
-    inline static QString getBuiltInStyleSheetName(enum BuiltInStyleSheets style = Phoebetria_Stylesheet_Standard);
-    inline static bool setAppToBuiltInStyleSheet(BuiltInStyleSheets style = Phoebetria_Stylesheet_Standard);
+    inline static QString getBuiltInStyleSheetName(enum BuiltInStyleSheets style = Shubetria_Stylesheet_Standard);
+    inline static bool setAppToBuiltInStyleSheet(BuiltInStyleSheets style = Shubetria_Stylesheet_Standard);
 };
 
 
@@ -61,10 +61,10 @@ QString Themes::prependPath(const QString& filename)
 
 QString Themes::getBuiltInStyleSheetName(enum BuiltInStyleSheets style)
 {
-    if (style == Phoebetria_Stylesheet_Standard)
-        return QString(":/other/Phoebetria.qss");
+    if (style == Shubetria_Stylesheet_Standard)
+        return QString(":/other/Shubetria.qss");
     else
-        return QString(":/other/Phoebetria-Dark.qss");
+        return QString(":/other/Shubetria-Dark.qss");
 }
 
 bool Themes::setAppToBuiltInStyleSheet(enum BuiltInStyleSheets style)

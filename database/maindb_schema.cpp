@@ -106,20 +106,20 @@ static MainDbSchema::TableDef schema[] =
         ");"
     }
 };
-#define PHOEBETRIA_DB_SCHEMA_TABLE_COUNT ( sizeof schema / sizeof schema[0] )
+#define SHUBETRIA_DB_SCHEMA_TABLE_COUNT ( sizeof schema / sizeof schema[0] )
 
 
 static const char* defaultDataSql[] =
 {
         // Note: schema version is inserted by insertDefaultData()
-    "INSERT INTO [Profile] ([p_id], [name], [isAuto], [isCelcius], [isAudibleAlarm], [isSoftwareAuto]) VALUES (1, '__PHOEBETRIA_DEFAULT', 'true', 'true', 'true', 'false')",
+    "INSERT INTO [Profile] ([p_id], [name], [isAuto], [isCelcius], [isAudibleAlarm], [isSoftwareAuto]) VALUES (1, '__SHUBETRIA_DEFAULT', 'true', 'true', 'true', 'false')",
     "INSERT INTO ChannelSetting (p_id, channel, manualRpm, alarmTempF) VALUES (1, 0, 50000, 194)",
     "INSERT INTO ChannelSetting (p_id, channel, manualRpm, alarmTempF) VALUES (1, 1, 50000, 194)",
     "INSERT INTO ChannelSetting (p_id, channel, manualRpm, alarmTempF) VALUES (1, 2, 50000, 194)",
     "INSERT INTO ChannelSetting (p_id, channel, manualRpm, alarmTempF) VALUES (1, 3, 50000, 194)",
     "INSERT INTO ChannelSetting (p_id, channel, manualRpm, alarmTempF) VALUES (1, 4, 50000, 194)"
 };
-#define PHOEBETRIA_DB_DEFAULT_DATA_COUNT \
+#define SHUBETRIA_DB_DEFAULT_DATA_COUNT \
     ( sizeof defaultDataSql / sizeof defaultDataSql[0] )
 
 
@@ -202,7 +202,7 @@ bool MainDbSchema::checkTables(const QString& dbFilename,
 
     if (missingTablesList) missingTablesList->clear();
 
-    for (unsigned i = 0 ; i < PHOEBETRIA_DB_SCHEMA_TABLE_COUNT; i++)
+    for (unsigned i = 0 ; i < SHUBETRIA_DB_SCHEMA_TABLE_COUNT; i++)
     {
         if (!db_tables.contains(schema[i].name))
         {
@@ -224,7 +224,7 @@ bool MainDbSchema::checkTables(const QString& dbFilename,
 */
 bool MainDbSchema::schemaVersionOk(void)
 {
-    PHOEBETRIA_STUB_FUNCTION
+    SHUBETRIA_STUB_FUNCTION
     return true; // TODO IMPLEMENT
 }
 
@@ -258,7 +258,7 @@ QSqlError MainDbSchema::createTables(void)
     QSqlDatabase db = QSqlDatabase::database(newDbConnName);
     QStringList db_tables = db.tables();
 
-    for (unsigned i = 0 ; i < PHOEBETRIA_DB_SCHEMA_TABLE_COUNT; i++)
+    for (unsigned i = 0 ; i < SHUBETRIA_DB_SCHEMA_TABLE_COUNT; i++)
     {
         // If the table doesn't exist, create it
         if (!db_tables.contains(schema[i].name))
@@ -306,7 +306,7 @@ QSqlError MainDbSchema::insertDefaultData(void)
 
     db.transaction();
 
-    for (unsigned i = 0 ; i < PHOEBETRIA_DB_DEFAULT_DATA_COUNT; i++)
+    for (unsigned i = 0 ; i < SHUBETRIA_DB_DEFAULT_DATA_COUNT; i++)
     {
         if (!qry.exec(defaultDataSql[i]))
         {

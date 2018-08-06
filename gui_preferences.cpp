@@ -21,7 +21,7 @@
 #include <QStringList>
 #include <QDirIterator>
 
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 #include "themes.h"
 #include "languages.h"
 
@@ -123,11 +123,11 @@ void gui_Preferences::populateThemesComboBox(void)
     Themes::getCustomThemeList(&items);
 
     // Add the built in stylesheets
-    ui->ctrl_style->addItem("Phoebetria (Standard)",
-                            Themes::getBuiltInStyleSheetName(Phoebetria_Stylesheet_Standard));
+    ui->ctrl_style->addItem("Shubetria (Standard)",
+                            Themes::getBuiltInStyleSheetName(Shubetria_Stylesheet_Standard));
 
-    ui->ctrl_style->addItem("Phoebetria (Dark)",
-                            Themes::getBuiltInStyleSheetName(Phoebetria_Stylesheet_Dark));
+    ui->ctrl_style->addItem("Shubetria (Dark)",
+                            Themes::getBuiltInStyleSheetName(Shubetria_Stylesheet_Dark));
 
     int c = items.count();
     for (int i = 0; i < c; ++i)
@@ -136,7 +136,7 @@ void gui_Preferences::populateThemesComboBox(void)
         ui->ctrl_style->addItem(td.name, td.fileNameAndPath);
     }
 
-    QString currThemeFilename = ph_phoebetriaApp()->getCurrentThemeFilename();
+    QString currThemeFilename = ph_shubetriaApp()->getCurrentThemeFilename();
 
     if (!currThemeFilename.isEmpty())
     {
@@ -206,7 +206,7 @@ void gui_Preferences::commitChanges(void) const
     {
         QString themeFilename =  ui->ctrl_style->itemData(idx).toString();
         ph_prefs().setStylesheet(themeFilename);
-        ph_phoebetriaApp()->setTheme(themeFilename);
+        ph_shubetriaApp()->setTheme(themeFilename);
     }
 
     ph_prefs().setShowChannelLabels(ui->ctrl_showChannelLabels->isChecked());

@@ -1,6 +1,6 @@
 #include "gui_diagnostic.h"
 #include "ui_gui_diagnostic.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 #include "appinfo.h"
 #include "QPrinter"
 #include "QDir"

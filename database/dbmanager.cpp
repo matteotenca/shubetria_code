@@ -31,7 +31,7 @@ QString DatabaseManager::m_dbPath = Preferences::filepath();
 
 const DatabaseManager::DbDetails DatabaseManager::m_dbConnectionDetails[]  =
 {
-    { "primaryDb", "phoebetria.sqlite" },
+    { "primaryDb", "shubetria.sqlite" },
     { "logDb", "sessionlog.sqlite" }
 };
 

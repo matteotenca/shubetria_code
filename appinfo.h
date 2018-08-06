@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_APPINFO_H
-#define PHOEBETRIA_APPINFO_H
+#ifndef SHUBETRIA_APPINFO_H
+#define SHUBETRIA_APPINFO_H
 
 #include <QString>
 #include <QStringList>
@@ -29,7 +29,7 @@ public:
     static QString basicInfoReport(void);
 
     static QString qtVersion(void);
-    static QString phoebetriaVersion(void);
+    static QString shubetriaVersion(void);
     static QString platformInfo(void);
 
     static unsigned long maxFanControllerPollTime(void);
@@ -53,4 +53,4 @@ private:
 
 };
 
-#endif // PHOEBETRIA_APPINFO_H
+#endif // SHUBETRIA_APPINFO_H

@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_PRIMARYDB_H
-#define PHOEBETRIA_PRIMARYDB_H
+#ifndef SHUBETRIA_PRIMARYDB_H
+#define SHUBETRIA_PRIMARYDB_H
 
 #include <QStringList>
 #include <QList>
@@ -110,4 +110,4 @@ QSqlError MainDb::lastSqlError(void) const
     return m_lastSqlError;
 }
 
-#endif // PHOEBETRIA_PRIMARYDB_H
+#endif // SHUBETRIA_PRIMARYDB_H

@@ -2,7 +2,7 @@
 #include "ui_gui_help.h"
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 gui_Help::gui_Help(QWidget *parent) :
     QDialog(parent),

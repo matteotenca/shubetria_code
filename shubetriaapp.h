@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_APP_H
-#define PHOEBETRIA_APP_H
+#ifndef SHUBETRIA_APP_H
+#define SHUBETRIA_APP_H
 
 // (c) 2018 Shub
 #include "fancontrollerio.h"
@@ -28,7 +28,7 @@
 #include "preferences.h"
 
 /*
-    By the time PhoebetriaApp::shutdown() is called, the global timer has
+    By the time ShubetriaApp::shutdown() is called, the global timer has
     been disabled by Qt. Since the request thread still needs to be emptied,
     and requests can must be sent with a minumum interval of 200ms between
     them we need a mechanism for delay. This class implements a wait function
@@ -45,12 +45,12 @@ public:
 };
 
 
-class PhoebetriaApp : public QApplication
+class ShubetriaApp : public QApplication
 {
     friend void EventDispatcher::connectToTimerSignal(void);
 
 public:
-    PhoebetriaApp(int &argc, char **argv);
+    ShubetriaApp(int &argc, char **argv);
 
     void commitData(QSessionManager& manager);
 
@@ -94,44 +94,44 @@ private:
 /* Convenience functions
  */
 
-inline PhoebetriaApp* ph_phoebetriaApp(void)
+inline ShubetriaApp* ph_shubetriaApp(void)
 {
-    return static_cast<PhoebetriaApp*> qApp;
+    return static_cast<ShubetriaApp*> qApp;
 }
 
 inline FanControllerData& ph_fanControllerData(void)
 {
-    return ph_phoebetriaApp()->fcd();
+    return ph_shubetriaApp()->fcd();
 }
 
 inline FanControllerIO& ph_fanControllerIO(void)
 {
-    return ph_phoebetriaApp()->fanControllerIO();
+    return ph_shubetriaApp()->fanControllerIO();
 }
 
 inline EventDispatcher& ph_dispatcher(void)
 {
-    return ph_phoebetriaApp()->dispatcher();
+    return ph_shubetriaApp()->dispatcher();
 }
 
 inline bool ph_isShuttingDown(void)
 {
-    return ph_phoebetriaApp()->isShuttingDown();
+    return ph_shubetriaApp()->isShuttingDown();
 }
 
 inline void ph_shutdown(void)
 {
-    ph_phoebetriaApp()->shutdown();
+    ph_shubetriaApp()->shutdown();
 }
 
 inline void ph_resetSchedulerElapsedTime(void)
 {
-    ph_phoebetriaApp()->resetScheduler();
+    ph_shubetriaApp()->resetScheduler();
 }
 
 inline Preferences& ph_prefs(void)
 {
-    return ph_phoebetriaApp()->prefs();
+    return ph_shubetriaApp()->prefs();
 }
 
-#endif // PHOEBETRIA_APP_H
+#endif // SHUBETRIA_APP_H

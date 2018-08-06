@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="gui_resources.qrc">
-    <normaloff>:/Images/icons/32x32/phoebetria.png</normaloff>:/Images/icons/32x32/phoebetria.png</iconset>
+    <normaloff>:/Images/icons/32x32/shubetria.png</normaloff>:/Images/icons/32x32/shubetria.png</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>

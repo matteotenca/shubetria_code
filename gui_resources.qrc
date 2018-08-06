@@ -33,18 +33,18 @@
         <file>Images/pref_sliders.png</file>
         <file>Images/icon_channels_dark_blue.png</file>
         <file>Images/icon_channels_lite_blue.png</file>
-        <file>Images/icons/16x16/phoebetria.png</file>
-        <file>Images/icons/16x16/phoebetria_red.png</file>
-        <file>Images/icons/22x22/phoebetria.png</file>
-        <file>Images/icons/22x22/phoebetria_red.png</file>
-        <file>Images/icons/32x32/phoebetria.png</file>
-        <file>Images/icons/32x32/phoebetria_red.png</file>
-        <file>Images/icons/48x48/phoebetria.png</file>
-        <file>Images/icons/48x48/phoebetria_red.png</file>
-        <file>Images/icons/64x64/phoebetria.png</file>
-        <file>Images/icons/64x64/phoebetria_red.png</file>
-        <file>Images/icons/128x128/phoebetria.png</file>
-        <file>Images/icons/128x128/phoebetria_red.png</file>
+        <file>Images/icons/16x16/shubetria.png</file>
+        <file>Images/icons/16x16/shubetria_red.png</file>
+        <file>Images/icons/22x22/shubetria.png</file>
+        <file>Images/icons/22x22/shubetria_red.png</file>
+        <file>Images/icons/32x32/shubetria.png</file>
+        <file>Images/icons/32x32/shubetria_red.png</file>
+        <file>Images/icons/48x48/shubetria.png</file>
+        <file>Images/icons/48x48/shubetria_red.png</file>
+        <file>Images/icons/64x64/shubetria.png</file>
+        <file>Images/icons/64x64/shubetria_red.png</file>
+        <file>Images/icons/128x128/shubetria.png</file>
+        <file>Images/icons/128x128/shubetria_red.png</file>
         <file>Images/checkbox.png</file>
         <file>Images/down_arrow.png</file>
         <file>Images/handle.png</file>
@@ -54,7 +54,7 @@
         <file alias="Acknowledgments">ACKNOWLEDGEMENTS.html</file>
     </qresource>
     <qresource prefix="/other">
-        <file>Phoebetria.qss</file>
-        <file>Phoebetria-Dark.qss</file>
+        <file>Shubetria.qss</file>
+        <file>Shubetria-Dark.qss</file>
     </qresource>
 </RCC>

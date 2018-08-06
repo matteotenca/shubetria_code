@@ -16,7 +16,7 @@
 
 #include "gui_about.h"
 #include "ui_gui_about.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 #include "builddetails.h"
 

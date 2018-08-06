@@ -16,7 +16,7 @@
 
 #include "fancontrollerdata.h"
 #include "fanchanneldata.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 // TODO: hack
 #define round(x) ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))

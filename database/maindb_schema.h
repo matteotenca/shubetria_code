@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_DB_PRIMARY_SCHEMA_H
-#define PHOEBETRIA_DB_PRIMARY_SCHEMA_H
+#ifndef SHUBETRIA_DB_PRIMARY_SCHEMA_H
+#define SHUBETRIA_DB_PRIMARY_SCHEMA_H
 
 #include <stdlib.h>
 
@@ -62,4 +62,4 @@ private:
     static int m_schemaVersion;
 };
 
-#endif // PHOEBETRIA_DB_PRIMARY_SCHEMA_H
+#endif // SHUBETRIA_DB_PRIMARY_SCHEMA_H

@@ -12,11 +12,11 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 # (c) Shub 2018
 greaterThan(QT_MAJOR_VERSION, 4): QT += printsupport
 
-TARGET = Phoebetria
+TARGET = Shubetria
 TEMPLATE = app
 
-TRANSLATIONS =  language/phoebetria_de.ts \
-                language/phoebetria_en.ts
+TRANSLATIONS =  language/shubetria_de.ts \
+                language/shubetria_en.ts
 
 PREFIX = /usr
 BINDIR = $$PREFIX/bin
@@ -64,7 +64,6 @@ coretemp.path = $${BINDIR}
 
 SOURCES += main.cpp \
     gui_mainwindow.cpp \
-    phoebetriaapp.cpp \
     device-io.cpp \
     fanchanneldata.cpp \
     fancontrollerdata.cpp \
@@ -89,10 +88,10 @@ SOURCES += main.cpp \
     appinfo.cpp \
     languages.cpp \
     gui_diagnostic.cpp \
-    gui_help.cpp
+    gui_help.cpp \
+    shubetriaapp.cpp
 
 HEADERS  += gui_mainwindow.h \
-    phoebetriaapp.h \
     device-io.h \
     fanchanneldata.h \
     fancontrollerdata.h \
@@ -119,7 +118,8 @@ HEADERS  += gui_mainwindow.h \
     appinfo.h \
     languages.h \
     gui_diagnostic.h \
-    gui_help.h
+    gui_help.h \
+    shubetriaapp.h
 
 FORMS    += gui_mainwindow.ui \
     gui_about.ui \
@@ -156,11 +156,11 @@ win32 {
     HEADERS += Windows/coretemp/GetCoreTempInfo.h \
                bfx-recon/windows/fancontrollerio.h
     INCLUDEPATH += Windows/coretemp \
-    							 bfx-recon/windows
+                 bfx-recon/windows
     LIBS += -lsetupapi -lGetCoreTempInfo
     QMAKE_LIBDIR += ..\\phoebetria-code\\Windows\\coretemp
     # -lGetCoreTempInfo coretemp\\GetCoreTempInfo.lib
-    RC_FILE = Windows/Phoebetria.rc
+    RC_FILE = Windows/Shubetria.rc
     CONFIG += exceptions rtti
 }
 
@@ -176,10 +176,13 @@ macx {
     #QMAKE_MAC_SDK=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
     LIBS += -framework CoreFoundation -framework IOKit
     SOURCES += hidapi/mac/hid.c
-    ICON = mac/Phoebetria.icns
+    ICON = mac/Shubetria.icns
     APP_QML_FILES.files = mac/qt_menu.nib
     APP_QML_FILES.path = Contents/Resources
     QMAKE_BUNDLE_DATA += APP_QML_FILES
 }
 
 OTHER_FILES +=
+
+DISTFILES += \
+    mac/Shubetria.icns

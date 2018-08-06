@@ -22,10 +22,10 @@
 #include <QByteArray>
 
 #include "builddetails.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 #include "hidapi.h"
 #include "maindb.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 AppInfo::AppInfo()
 {
@@ -39,7 +39,7 @@ QString AppInfo::basicInfoReport(void)
 
     report = "<html><body>";
     report += "<table border=0>";
-    report += "<tr><td width=120 align=left><h3>Phoebetria:</h3></td><td width=500 align=left><h3>" + phoebetriaVersion() + "</h3></td></tr>";
+    report += "<tr><td width=120 align=left><h3>Shubetria:</h3></td><td width=500 align=left><h3>" + shubetriaVersion() + "</h3></td></tr>";
     report += "<tr><td width=120 align=left>Using Qt:</td><td width=200 align=left>" + qtVersion() + "</td></tr>";
     report += "<tr><td width=120 align=left>OS:</td><td width=200 align=left>" + platformInfo() + "</td></tr>";
     report += "<tr><td width=120 align=left>Recon:</td><td width=200 align=left>" + connectedToDevice() + "</td></tr>";
@@ -85,7 +85,7 @@ QString AppInfo::qtVersion(void)
     return BuildDetails::qtVersion();
 }
 
-QString AppInfo::phoebetriaVersion(void)
+QString AppInfo::shubetriaVersion(void)
 {
     return BuildDetails::versionStr().trimmed()
             + " " + BuildDetails::buildDateTimeStr();

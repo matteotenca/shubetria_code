@@ -22,7 +22,7 @@
 #include <stdlib.h>
 
 #include "gui_mainwindow.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 #include "device-io.h"
 
 
@@ -40,7 +40,7 @@ void CloseHelper::onLastWindowClosed(void)
 int main(int argc, char *argv[])
 {
 
-    PhoebetriaApp a(argc, argv);
+    ShubetriaApp a(argc, argv);
     gui_MainWindow w;
     CloseHelper chelper;
 

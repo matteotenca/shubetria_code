@@ -14,7 +14,7 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 #include <QMessageBox>
 
@@ -22,10 +22,10 @@
 #include "themes.h"
 #include "preferences.h"
 
-FanControllerIO PhoebetriaApp::m_fanControllerIO;
-EventDispatcher PhoebetriaApp::m_dispatcher;
-QTimer PhoebetriaApp::m_globalTimer;
-Preferences PhoebetriaApp::m_prefs;
+FanControllerIO ShubetriaApp::m_fanControllerIO;
+EventDispatcher ShubetriaApp::m_dispatcher;
+QTimer ShubetriaApp::m_globalTimer;
+Preferences ShubetriaApp::m_prefs;
 
 
 ShutdownHelper::ShutdownHelper(QThread *parent)
@@ -40,12 +40,12 @@ void ShutdownHelper::wait(unsigned long ms)
 }
 
 
-PhoebetriaApp::PhoebetriaApp(int &argc, char **argv)
+ShubetriaApp::ShubetriaApp(int &argc, char **argv)
     : QApplication(argc, argv),
       m_currentStyle_filename()
 {
-    setOrganizationName("Phoebetria");
-    setApplicationName("Phoebetria");
+    setOrganizationName("Shubetria");
+    setApplicationName("Shubetria");
 
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
@@ -75,7 +75,7 @@ PhoebetriaApp::PhoebetriaApp(int &argc, char **argv)
     m_fanControllerIO.fanControllerData().connectSignals();
 }
 
-void PhoebetriaApp::commitData(QSessionManager& manager)
+void ShubetriaApp::commitData(QSessionManager& manager)
 {
     shutdown();
     // (c) 2018 Shub
@@ -90,7 +90,7 @@ void PhoebetriaApp::commitData(QSessionManager& manager)
    Recon needs to be reset back to a pre-software-auto state.
  */
 
-bool PhoebetriaApp::shutdown(void)
+bool ShubetriaApp::shutdown(void)
 {
     // Wait for all pending tasks to be processed
     m_dispatcher.shutdown();
@@ -110,7 +110,7 @@ bool PhoebetriaApp::shutdown(void)
     return true;
 }
 
-bool PhoebetriaApp::setTheme(const QString& styleFilename)
+bool ShubetriaApp::setTheme(const QString& styleFilename)
 {
     bool r = false;
     if (Themes::setAppStyleSheet(styleFilename))
@@ -121,7 +121,7 @@ bool PhoebetriaApp::setTheme(const QString& styleFilename)
     return r;
 }
 
-const QString& PhoebetriaApp::getCurrentThemeFilename(void) const
+const QString& ShubetriaApp::getCurrentThemeFilename(void) const
 {
     return m_currentStyle_filename;
 }

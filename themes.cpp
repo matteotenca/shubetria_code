@@ -20,7 +20,7 @@
 #include <QFile>
 
 #include "preferences.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 Themes::Themes()
 {
@@ -92,7 +92,7 @@ bool Themes::setAppStyleSheet(const QString& filename)
     if (ss.isEmpty() || ss.isNull())
         return false;
 
-    ph_phoebetriaApp()->setStyleSheet(ss);
+    ph_shubetriaApp()->setStyleSheet(ss);
 
     return true;
 }

@@ -19,7 +19,7 @@
 #include <QDebug>
 
 #include "utils.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 #include <QString>
 
 // (c) 2018 Shub
@@ -30,7 +30,7 @@
 #define MAX_COMMANDQUEUE_LEN -1
 
 // Uncomment to output raw hex to/from the device
-//#define PHOEBETRIA_OUTPUT_RAW_HEX 1
+//#define SHUBETRIA_OUTPUT_RAW_HEX 1
 
 #define MAX_FAN_CHANNELS 5
 
@@ -249,7 +249,7 @@ void FanControllerIO::connectSignals(void)
     QObject::connect(&m_io_device, SIGNAL(dataRX(QByteArray)),
                      this, SLOT(onRawData(QByteArray)));
 
-    QObject::connect(&ph_phoebetriaApp()->dispatcher(), SIGNAL(task(EventDispatcher::TaskId)),
+    QObject::connect(&ph_shubetriaApp()->dispatcher(), SIGNAL(task(EventDispatcher::TaskId)),
                      this, SLOT(onDispatcherSignal(EventDispatcher::TaskId)));
 
 }
@@ -418,7 +418,7 @@ void FanControllerIO::onRawData(QByteArray rawdata)
     Input parsedData;
     bool inputParsed;
 
-#if defined QT_DEBUG && PHOEBETRIA_OUTPUT_RAW_HEX
+#if defined QT_DEBUG && SHUBETRIA_OUTPUT_RAW_HEX
     qDebug() << "#### Raw Data From Device:"
              << toHexString((const unsigned char*)rawdata.constData(), rawdata.length());
 #endif
@@ -589,7 +589,7 @@ void FanControllerIO::processRequestQueue(void)
         return;
     }
 
-#if defined QT_DEBUG && PHOEBETRIA_OUTPUT_RAW_HEX
+#if defined QT_DEBUG && SHUBETRIA_OUTPUT_RAW_HEX
     qDebug() << "#### Raw Data To Device:  "
              << toHexString(r.m_URB, sizeof(r.m_URB));
 #endif

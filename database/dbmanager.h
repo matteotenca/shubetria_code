@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_DATABASE_H
-#define PHOEBETRIA_DATABASE_H
+#ifndef SHUBETRIA_DATABASE_H
+#define SHUBETRIA_DATABASE_H
 
 #include <QStringList>
 #include <QList>
@@ -95,4 +95,4 @@ QString DatabaseManager::pathToDatabases(void)
     return m_dbPath;
 }
 
-#endif // PHOEBETRIA_DATABASE_H
+#endif // SHUBETRIA_DATABASE_H

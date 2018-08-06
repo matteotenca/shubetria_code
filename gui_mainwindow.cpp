@@ -28,7 +28,7 @@
 
 #include "gui_mainwindow.h"
 #include "ui_gui_mainwindow.h"
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 // (c) 2018 Shub
 // #include "bfx-recon/fancontrollerio.h"
 #include "fancontrollerio.h"
@@ -68,7 +68,7 @@ gui_MainWindow::gui_MainWindow(QWidget *parent) :
     ui(new Ui::gui_MainWindow)
 {
     translator.load(ph_prefs().applicationLanguage());
-    PhoebetriaApp::installTranslator(&translator);
+    ShubetriaApp::installTranslator(&translator);
 
     ui->setupUi(this);
     restoreGeometry(ph_prefs().windowGeometry());
@@ -115,13 +115,13 @@ gui_MainWindow::gui_MainWindow(QWidget *parent) :
     }
 
 #if defined Q_WS_WIN
-    m_trayIcon.setIcon(QIcon(":/Images/icons/16x16/phoebetria.png"));
+    m_trayIcon.setIcon(QIcon(":/Images/icons/16x16/shubetria.png"));
 #elif defined Q_WS_MAC
-    m_trayIcon.setIcon(QIcon(":/Images/icons/22x22/phoebetria.png"));
+    m_trayIcon.setIcon(QIcon(":/Images/icons/22x22/shubetria.png"));
 #elif defined Q_WS_X11
-    m_trayIcon.setIcon(QIcon(":/Images/icons/22x22/phoebetria.png"));
+    m_trayIcon.setIcon(QIcon(":/Images/icons/22x22/shubetria.png"));
 #else
-    m_trayIcon.setIcon(QIcon(":/Images/icons/16x16/phoebetria.png"));
+    m_trayIcon.setIcon(QIcon(":/Images/icons/16x16/shubetria.png"));
 #endif
 
 #ifndef QT_DEBUG
@@ -143,7 +143,7 @@ gui_MainWindow::gui_MainWindow(QWidget *parent) :
         this->setWindowState(Qt::WindowMinimized);
     }
 
-    m_trayIcon.setToolTip("Phoebetria");
+    m_trayIcon.setToolTip("Shubetria");
     connect(&m_trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(onTrayIconActivated(QSystemTrayIcon::ActivationReason)));
 
@@ -155,7 +155,7 @@ gui_MainWindow::gui_MainWindow(QWidget *parent) :
 
     if (fc->isConnected() == false)
     {
-        ui->ctrl_logoAndStatus->setStyleSheet("background-image: url(:/Images/icons/128x128/phoebetria_red.png);");
+        ui->ctrl_logoAndStatus->setStyleSheet("background-image: url(:/Images/icons/128x128/shubetria_red.png);");
 
     }
 
@@ -202,7 +202,7 @@ void gui_MainWindow::initMenus(void)
     menu = ui->menuBar->addMenu(tr("Help"));
 
     // Help/Disgnostic Report
-    action = menu->addAction(tr("Phoebetria Help"));
+    action = menu->addAction(tr("Shubetria Help"));
     connect (action, SIGNAL(triggered()), this, SLOT(when_actionHelp_selected()));
     action = menu->addAction(tr("Diagnostic Report"));
     connect (action, SIGNAL(triggered()), this, SLOT(when_actionDiagnosticReport_selected()));
@@ -245,7 +245,7 @@ void gui_MainWindow::initWaitForReqChannelParams(void)
 {
     m_reqChannelParamsAreSet = false;
 
-    EventDispatcher& ed = ph_phoebetriaApp()->dispatcher();
+    EventDispatcher& ed = ph_shubetriaApp()->dispatcher();
 
     ui->ctrl_configSoftwareAutoBtn->setEnabled(false);
     ui->ctrl_isSoftwareControlBtn->setEnabled(false);
@@ -273,7 +273,7 @@ void gui_MainWindow::initLoadProfileActions(void)
 void gui_MainWindow::initTrayIconMenu(void)
 {
 #ifdef Q_WS_MAC
-    m_trayIconMenu.addAction("Open Phoebetria", this, SLOT(showNormal()));
+    m_trayIconMenu.addAction("Open Shubetria", this, SLOT(showNormal()));
     m_trayIconMenu.addSeparator();
 #endif
 
@@ -348,7 +348,7 @@ void gui_MainWindow::checkForReqChannelParems(void)
         ui->ctrl_configSoftwareAutoBtn->setEnabled(true);
         ui->ctrl_isSoftwareControlBtn->setEnabled(true);
 
-        EventDispatcher& ed = ph_phoebetriaApp()->dispatcher();
+        EventDispatcher& ed = ph_shubetriaApp()->dispatcher();
 
         disconnect(&ed, SIGNAL(tick()));
 
@@ -938,7 +938,7 @@ void gui_MainWindow::closeEvent(QCloseEvent *e)
                                 NULL,
                                 tr("Not switching to shutdown profile."),
                                 tr("The chosen profile is a Software Auto"
-                                        " profile that requires Phoebetria to be running.\n\n"
+                                        " profile that requires Shubetria to be running.\n\n"
                                            "Profile name: %1\n\n"
                                    "Removing the profile from preferences."
                                    ).arg(profile)
@@ -997,7 +997,7 @@ void gui_MainWindow::onTrayIconActivated(QSystemTrayIcon::ActivationReason reaso
            for "normal" operation. In Windows 7, if the tray icon is not hidden
            then it stays in the tray even after maximizing the application.
            Closing the application (with the close button) then still leaves
-           the tray icon and Phoebetria still running. The main window can be
+           the tray icon and Shubetria still running. The main window can be
            re-opened by double clicking the tray icon. This is useful to know
            when we have preferences that change the behaviour (this may be
            related to closeEvent() as well).
@@ -1348,9 +1348,9 @@ void gui_MainWindow::when_actionPreferences_selected()
     updateChannelControlTooltips();
     updateAllSpeedCtrls();
 
-    PhoebetriaApp::removeTranslator(&translator);
+    ShubetriaApp::removeTranslator(&translator);
     translator.load(ph_prefs().applicationLanguage());
-    PhoebetriaApp::installTranslator(&translator);
+    ShubetriaApp::installTranslator(&translator);
 
     // "Slight" hack to retranslate the menus :-)
     this->menuBar()->clear();

@@ -24,7 +24,7 @@
 #include "fancontrollerdata.h"
 #include "maindb.h"
 
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 FanControllerProfile::FanControllerProfile()
 {
@@ -44,8 +44,8 @@ void FanControllerProfile::initCommon(void)
 {
     QSettings settings(QSettings::IniFormat,
                        QSettings::UserScope,
-                       "Phoebetria",
-                       "Phoebetria");
+                       "Shubetria",
+                       "Shubetria");
 
     m_defaultProfileLocation = QFileInfo(settings.fileName()).path()
                                + "/Presets/";

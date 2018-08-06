@@ -14,8 +14,8 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_FANSPEEDRAMP_H
-#define PHOEBETRIA_FANSPEEDRAMP_H
+#ifndef SHUBETRIA_FANSPEEDRAMP_H
+#define SHUBETRIA_FANSPEEDRAMP_H
 
 #include <QList>
 #include <QPoint>
@@ -428,4 +428,4 @@ void FanSpeedRamp::setHysteresisFanOff(int delta)
   END Set functions for setup data
   -----------------------------------------------------------------------*/
 
-#endif // PHOEBETRIA_FANSPEEDRAMP_H
+#endif // SHUBETRIA_FANSPEEDRAMP_H

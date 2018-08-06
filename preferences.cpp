@@ -50,7 +50,7 @@ static const char* key_showChannelLabels     = "UserPrefs/showChannelLabels";
 Preferences::Preferences(QObject *parent) :
     QObject(parent),
     m_settings(QSettings::IniFormat, QSettings::UserScope,
-               "Phoebetria", "Phoebetria")
+               "Shubetria", "Shubetria")
 
 {
 }
@@ -59,8 +59,8 @@ QString Preferences::filepath(void)
 {
     QSettings settings(QSettings::IniFormat,
                        QSettings::UserScope,
-                       "Phoebetria",
-                       "Phoebetria");
+                       "Shubetria",
+                       "Shubetria");
     return QFileInfo(settings.fileName()).path();
 }
 

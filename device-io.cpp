@@ -2,7 +2,7 @@
 #include <QDebug>
 #include "device-io.h"
 
-#define PHOEBETRIA_HID_INPUT_BUFFSIZE 255
+#define SHUBETRIA_HID_INPUT_BUFFSIZE 255
 
 DeviceIO::DeviceIO(QObject *parent) :
     QObject(parent)
@@ -52,7 +52,7 @@ void DeviceIO::setBlocking(bool block)
 
 void DeviceIO::pollForData(void)
 {
-    unsigned char buff[PHOEBETRIA_HID_INPUT_BUFFSIZE];
+    unsigned char buff[SHUBETRIA_HID_INPUT_BUFFSIZE];
     int bytesRead;
 
     if (!m_device) return;

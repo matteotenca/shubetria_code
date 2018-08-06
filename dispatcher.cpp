@@ -18,7 +18,7 @@
 
 #include <math.h>
 
-#include "phoebetriaapp.h"
+#include "shubetriaapp.h"
 
 /*************************************************************************/
 /*!
@@ -30,7 +30,7 @@
     (should) require processing. The class itself does nothing but issue
     signals that other classes monitor and act upon. The minimum interval
     that signals can be sent is dependendant on minInterval(). Additionally,
-    minInterval() is dependant on PhoebetriaApp::m_globalTimer (the
+    minInterval() is dependant on ShubetriaApp::m_globalTimer (the
     minimum interval for the dispatcher is set to m_globalTimer's interval
     because the dispatcher is attached to the global timer's timeout()
     signal).
@@ -106,7 +106,7 @@ EventDispatcher::EventDispatcher(QObject *parent) :
 */
 int EventDispatcher::start(unsigned interval)
 {
-    unsigned gi = ph_phoebetriaApp()->globalTimerInterval();
+    unsigned gi = ph_shubetriaApp()->globalTimerInterval();
 
     m_minInterval = interval < gi ? gi : interval;
 
@@ -176,7 +176,7 @@ void EventDispatcher::addTask(const Task& e)
  */
 void EventDispatcher::connectToTimerSignal(void)
 {
-    connect(&ph_phoebetriaApp()->m_globalTimer, SIGNAL(timeout()),
+    connect(&ph_shubetriaApp()->m_globalTimer, SIGNAL(timeout()),
             this, SLOT(onTimer()));
 }
 

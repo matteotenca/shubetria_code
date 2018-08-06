@@ -1,4 +1,5 @@
 /*  Copyright 2012 Craig Robbins and Christopher Ferris
+    Copyright 2018 Matteo Tenca
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,11 +20,11 @@
 
 #include <QString>
 
-#define PHOEBETRIA_VERSION  1
-#define PHOEBETRIA_MAJOR_REVISION   4
-#define PHOEBETRIA_MINOR_REVISION   0
+#define SHUBETRIA_VERSION  0
+#define SHUBETRIA_MAJOR_REVISION   0
+#define SHUBETRIA_MINOR_REVISION   1
 
-#define PHOEBETRIA_STATUS_STR       ""
+#define SHUBETRIA_STATUS_STR       ""
 
 class BuildDetails
 {

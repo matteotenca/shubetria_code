@@ -730,7 +730,7 @@ int MainDb::importOldStyleProfiles(void)
     QMessageBox::information(
                 NULL,
                 QObject::tr("Importing old-style (.ini) profiles."),
-                QObject::tr("Phoebetria has changed the way it stores fan profiles.\n"
+                QObject::tr("Shubetria has changed the way it stores fan profiles.\n"
                             "Your existing profiles will now be imported."),
                 QMessageBox::Ok
                 );

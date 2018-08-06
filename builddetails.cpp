@@ -9,10 +9,10 @@ QString BuildDetails::versionStr(void)
 {
     QString s;
 
-    s = QString::number(PHOEBETRIA_VERSION)
-        + "." + QString::number(PHOEBETRIA_MAJOR_REVISION)
-        + "." + QString::number(PHOEBETRIA_MINOR_REVISION)
-        + " " + PHOEBETRIA_STATUS_STR;
+    s = QString::number(SHUBETRIA_VERSION)
+        + "." + QString::number(SHUBETRIA_MAJOR_REVISION)
+        + "." + QString::number(SHUBETRIA_MINOR_REVISION)
+        + " " + SHUBETRIA_STATUS_STR;
 
     return s;
 }

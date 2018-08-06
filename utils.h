@@ -14,17 +14,17 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_UTILS_H
-#define PHOEBETRIA_UTILS_H
+#ifndef SHUBETRIA_UTILS_H
+#define SHUBETRIA_UTILS_H
 
 #include <QString>
 
 #ifdef QT_DEBUG
-#   define PHOEBETRIA_STUB_FUNCTION \
+#   define SHUBETRIA_STUB_FUNCTION \
         qDebug() << "Stub function called. File:" \
         << __FILE__ << "Line:" << __LINE__;
 #else
-#   define PHOEBETRIA_STUB_FUNCTION \
+#   define SHUBETRIA_STUB_FUNCTION \
         {}
 #endif
 
@@ -33,4 +33,4 @@ QString toHexString(const unsigned char *data, int len);
 bool checkPath(const QString& path);
 bool fileExists(const QString& filename);
 
-#endif // PHOEBETRIA_UTILS_H
+#endif // SHUBETRIA_UTILS_H

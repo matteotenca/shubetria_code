@@ -14,21 +14,21 @@
     along with the program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef PHOEBETRIA_DISPATCHER_H
-#define PHOEBETRIA_DISPATCHER_H
+#ifndef SHUBETRIA_DISPATCHER_H
+#define SHUBETRIA_DISPATCHER_H
 
 #include <QObject>
 #include <QList>
 #include <QTimer>
 #include <QDateTime>
 
-class PhoebetriaApp;    // fwd decl
+class ShubetriaApp;    // fwd decl
 
 class EventDispatcher : public QObject
 {
     Q_OBJECT
 
-    friend class PhoebetriaApp;
+    friend class ShubetriaApp;
 
 public:
     typedef enum TaskId
@@ -132,4 +132,4 @@ void EventDispatcher::resetElapsedTime(void)
     m_elapsedTicks = 0;
 }
 
-#endif // PHOEBETRIA_DISPATCHER_H
+#endif // SHUBETRIA_DISPATCHER_H
