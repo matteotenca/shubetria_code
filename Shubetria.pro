@@ -170,16 +170,21 @@ unix:!macx {
     SOURCES += hidapi/libusb/hid.c
     LIBS += -lusb-1.0 -ludev -lrt
 }
+
 macx {
+
     QMAKE_INFO_PLIST = mac/Info.plist
     #QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.7
     #QMAKE_MAC_SDK=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
     LIBS += -framework CoreFoundation -framework IOKit
-    SOURCES += hidapi/mac/hid.c
+    SOURCES += hidapi/mac/hid.c \
+    					 bfx-recon/mac/fancontrollerio.cpp
+    HEADERS += bfx-recon/mac/fancontrollerio.h
     ICON = mac/Shubetria.icns
     APP_QML_FILES.files = mac/qt_menu.nib
     APP_QML_FILES.path = Contents/Resources
     QMAKE_BUNDLE_DATA += APP_QML_FILES
+    
 }
 
 OTHER_FILES +=
