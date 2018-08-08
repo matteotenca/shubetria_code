@@ -177,9 +177,9 @@ macx {
     #QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.7
     #QMAKE_MAC_SDK=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
     LIBS += -framework CoreFoundation -framework IOKit
-    SOURCES += hidapi/mac/hid.c \
-    					 bfx-recon/mac/fancontrollerio.cpp
-    HEADERS += bfx-recon/mac/fancontrollerio.h
+    SOURCES += hidapi/mac/hid.c bfx-recon/mac/fancontrollerio.cpp bfx-recon/mac/smc_temp.cpp bfx-recon/mac/smc.cpp
+    HEADERS += bfx-recon/mac/fancontrollerio.h bfx-recon/mac/smc_temp.h bfx-recon/mac/smc.h
+    
     ICON = mac/Shubetria.icns
     APP_QML_FILES.files = mac/qt_menu.nib
     APP_QML_FILES.path = Contents/Resources

@@ -20,7 +20,7 @@
 
 #include "utils.h"
 #include "shubetriaapp.h"
-#include "smc_cputemp.h"
+#include "smc_temp.h"
 
 // Maximum length of the command queue. Set to -1 for no max length
 #define MAX_COMMANDQUEUE_LEN -1
@@ -342,7 +342,7 @@ void FanControllerIO::onDispatcherSignal(EventDispatcher::TaskId taskId)
 int FanControllerIO::readCpuTemp(int probetemp, int channel)
 {
     int temp = 0;
-    char t[5];
+//    char t[4];
  
     
     if ( channel != 2 ) {
@@ -355,9 +355,11 @@ int FanControllerIO::readCpuTemp(int probetemp, int channel)
 #endif
     }
     else {
-        stpcpy(t, "TC0D");
-        temp = newmain(t);
-        temp = round( temp * 9/5.0 + 32);
+//        snprintf(t, 4, "%s", "TC0D");
+        // t = CPU_0_DIODE;
+//        memcpy(&t, "TC0D", 4);
+        temp = SMCreadCpuTemp(CPU_0_DIODE);
+//        temp = round( temp * 9/5.0 + 32);
         
 #ifdef QT_DEBUG
         qDebug() << "Channel: "
@@ -402,7 +404,7 @@ void FanControllerIO::onRawData(QByteArray rawdata)
     }
 
     switch (parsedData.m_controlByte)
-    {
+   		 {
     case RX_ACK:
     case RX_NAK:
         break;
