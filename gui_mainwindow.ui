@@ -29,9 +29,6 @@
    <iconset>
     <normaloff>:/Images/shubetria_icon_16.png</normaloff>:/Images/shubetria_icon_16.png</iconset>
   </property>
-  <property name="locale">
-   <locale language="English" country="UnitedStates"/>
-  </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>false</bool>
   </property>

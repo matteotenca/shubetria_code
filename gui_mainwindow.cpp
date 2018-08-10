@@ -1742,8 +1742,9 @@ LabelOverlay::LabelOverlay(QLabel *parent)
 ChannelLabel::ChannelLabel(QLabel *parent)
     : QLabel(parent)
 {
-    QFont f("",9);
-
+    // QFont f("",9);
+    QFont f = this->font();
+    f.setPointSize(8);
     ;setFont(f);
     ;setAlignment(Qt::AlignHCenter);
 }

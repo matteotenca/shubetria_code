@@ -25,6 +25,8 @@
 #include "shubetriaapp.h"
 #include "device-io.h"
 
+#include <QTranslator>
+#include <QDir>
 
 CloseHelper::CloseHelper(QObject *parent)
     : QObject(parent)
@@ -41,6 +43,26 @@ int main(int argc, char *argv[])
 {
 
     ShubetriaApp a(argc, argv);
+//    QTranslator translator;
+    QLocale mylocale;
+    //    QString lan = mylocale.language();
+    QString locale = QLocale::system().name();
+    //    QString langfilename = "test_" + locale;
+    // QString langfilename = "shubetria." + locale;
+    QString langfilename = "shubetria";
+    QString langfilepath = "translations";
+    QString langprefix = ".";
+    bool test = false;
+    QString tifotto = QDir::currentPath();
+    QStringList langlist = mylocale.uiLanguages();
+//    test = translator.load(mylocale, langfilename, langprefix, langfilepath);
+    // test = translator.load(langfilename, langfilepath);
+    //    if ( ! test) {
+    //        printf("%s", "Error.");
+    //        exit(1);
+    //    }
+    //    translator.load(langfilename, langfilepath);
+//    a.installTranslator(&translator);
     gui_MainWindow w;
     CloseHelper chelper;
 

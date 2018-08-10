@@ -44,8 +44,8 @@ QString Languages::convertLanguageToFile(QString lang)
         language_code = "de";
     } else if (lang == "English") {
         language_code = "en";
-    } else {
-        language_code = "en";
+    } else if (lang == "Italian") {
+        language_code = "it";
     }
 
     QString file = QString(":/language/shubetria_%1.qm").arg(language_code);

@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="appinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="averager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="builddetails.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database\dbmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="device-io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fanchanneldata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fancontrollerdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bfx-recon\windows\fancontrollerio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fanprofiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="softwareauto\fanramp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_about.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_diagnostic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_help.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_preferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_profiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_setmanualrpm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_softwareautosetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hidapi\windows\hid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="languages.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database\maindb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database\maindb_schema.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="preferences.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QCustomPlot\qcustomplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shubetriaapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="themes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timestampedtemperature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Windows\coretemp\GetCoreTempInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="appinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="averager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bfx-recon\bfxrecon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="builddetails.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="database\dbmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="device-io.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dispatcher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="fanchanneldata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="fancontrollerdata.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bfx-recon\windows\fancontrollerio.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="fanprofiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="softwareauto\fanramp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="gui_about.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_diagnostic.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_help.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_preferences.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_profiles.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_setmanualrpm.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="gui_softwareautosetup.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="hidapi\hidapi\hidapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="languages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="main.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="database\maindb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="database\maindb_schema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="preferences.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QCustomPlot\qcustomplot.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="shubetriaapp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="themes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timestampedtemperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="ui_gui_about.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_diagnostic.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_help.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_preferences.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_profiles.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_setmanualrpm.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_gui_softwareautosetup.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\shubetria.en_EN.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\shubetria.en_US.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\shubetria.it_IT.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="language\shubetria_de.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="language\shubetria_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="language\shubetria_it.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\shubetria.en_EN.qm" />
+    <None Include="translations\shubetria.it_IT.qm" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="gui_about.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_diagnostic.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_help.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_preferences.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_profiles.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_setmanualrpm.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="gui_softwareautosetup.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ACKNOWLEDGEMENTS.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="language\English.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="language\German.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="LICENSE-BRIEF.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Shubetria-Dark.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Shubetria.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\checkbox.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\down_arrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="gui_help.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="gui_languages.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="gui_resources.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="Images\handle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_arrow_down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_arrow_up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_auto.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_auto_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_celcius.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_celcius_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_channels_dark_blue.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_channels_lite_blue.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_checkbox.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_checkbox_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_close_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_fahrenheit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_fahrenheit_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_fan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_fan_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_hardware.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_hardware_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_manual.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_manual_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_software.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_software_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_volume_off.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_volume_off_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_volume_on.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_volume_on_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_wrench.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_wrench_lite.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons_check.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons_check_checked.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\pref_appearance.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\pref_gears.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\pref_sliders.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\preferences_appearance.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\preferences_appearance.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\preferences_channel.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\preferences_channels.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\preferences_general.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\preferences_general.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\preferences_intro.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\shubetria.en_EN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\shubetria.en_US.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\shubetria.it_IT.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\128x128\shubetria.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\16x16\shubetria.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\22x22\shubetria.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\32x32\shubetria.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\48x48\shubetria.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\64x64\shubetria.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="language\shubetria_de.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="language\shubetria_en.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\128x128\shubetria_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\16x16\shubetria_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\22x22\shubetria_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\32x32\shubetria_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\48x48\shubetria_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icons\64x64\shubetria_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\window_about.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\window_about.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\window_diagnostic.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\window_diagnostic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\window_into.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\window_main.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\window_main.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\window_profile.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\window_profile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\window_softwareauto.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\window_softwareauto_advanced.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="help\images\window_softwareauto_channel.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mac\Shubetria.icns">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="translations\shubetria.en_EN.qm">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="translationse\shubetria.en_US.qm">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="translations\shubetria.it_IT.qm">
+      <Filter>Distribution Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Windows\Shubetria.rc" />
+  </ItemGroup>
+</Project>

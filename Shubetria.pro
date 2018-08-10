@@ -16,14 +16,19 @@ TARGET = Shubetria
 TEMPLATE = app
 
 TRANSLATIONS =  language/shubetria_de.ts \
-                language/shubetria_en.ts
+                language/shubetria_en.ts \
+                language/shubetria_it.ts \
+                translations/shubetria.it_IT.ts \
+                translations/shubetria.en_US.ts \
+                translations/shubetria.en_EN.ts
+
 
 PREFIX = /usr
 BINDIR = $$PREFIX/bin
 DATADIR = $$PREFIX/share
 ICONDIR = $$DATADIR/icons/hicolor
 
-INSTALLS += target desktop udev icon16 icon22 icon32 icon48 icon64 icon128 icon256 pixmap coretemp
+INSTALLS += target desktop udev icon16 icon22 icon32 icon48 icon64 icon128 icon256 pixmap
 
 target.path = $${BINDIR}
 
@@ -60,66 +65,69 @@ icon512.files += Images/icons/512x512/shubetria.png
 pixmap.path = $${DATADIR}/pixmaps
 pixmap.files += Images/icons/48x48/shubetria.png
 
-coretemp.path = $${BINDIR}
+# coretemp.path = $${BINDIR}
 
-SOURCES += main.cpp \
-    gui_mainwindow.cpp \
-    device-io.cpp \
-    fanchanneldata.cpp \
-    fancontrollerdata.cpp \
-    gui_about.cpp \
+SOURCES += QCustomPlot/qcustomplot.cpp \
+    appinfo.cpp \
+    averager.cpp \
     builddetails.cpp \
-    utils.cpp \
-    preferences.cpp \
-    dispatcher.cpp \
-    fanprofiles.cpp \
-    gui_preferences.cpp \
     database/dbmanager.cpp \
     database/maindb.cpp \
     database/maindb_schema.cpp \
-    QCustomPlot/qcustomplot.cpp \
-    gui_softwareautosetup.cpp \
-    softwareauto/fanramp.cpp \
-    gui_profiles.cpp \
-    gui_setmanualrpm.cpp \
-    themes.cpp \
-    timestampedtemperature.cpp \
-    averager.cpp \
-    appinfo.cpp \
-    languages.cpp \
+    device-io.cpp \
+    dispatcher.cpp \
+    fanchanneldata.cpp \
+    fancontrollerdata.cpp \
+    fanprofiles.cpp \
+    gui_about.cpp \
     gui_diagnostic.cpp \
     gui_help.cpp \
-    shubetriaapp.cpp
+    gui_mainwindow.cpp \
+    gui_preferences.cpp \
+    gui_profiles.cpp \
+    gui_setmanualrpm.cpp \
+    gui_softwareautosetup.cpp \
+    languages.cpp \
+    main.cpp \
+    preferences.cpp \
+    shubetriaapp.cpp \
+    softwareauto/fanramp.cpp \
+    themes.cpp \
+    timestampedtemperature.cpp \
+    utils.cpp
 
-HEADERS  += gui_mainwindow.h \
-    device-io.h \
-    fanchanneldata.h \
-    fancontrollerdata.h \
-    gui_about.h \
-    builddetails.h \
-    utils.h \
-    preferences.h \
+
+HEADERS  += QCustomPlot/qcustomplot.h \
+    appinfo.h \
+    averager.h \
     bfx-recon/bfxrecon.h \
-    dispatcher.h \
-    fanprofiles.h \
-    gui_preferences.h \
+    builddetails.h \
     database/dbmanager.h \
     database/maindb.h \
     database/maindb_schema.h \
-    QCustomPlot/qcustomplot.h \
-    gui_softwareautosetup.h \
-    softwareauto/fanramp.h \
-    gui_profiles.h \
-    main.h \
-    gui_setmanualrpm.h \
-    themes.h \
-    timestampedtemperature.h \
-    averager.h \
-    appinfo.h \
-    languages.h \
+    device-io.h \
+    dispatcher.h \
+    fanchanneldata.h \
+    fancontrollerdata.h \
+    fanprofiles.h \
+    gui_about.h \
     gui_diagnostic.h \
     gui_help.h \
-    shubetriaapp.h
+    gui_mainwindow.h \
+    gui_preferences.h \
+    gui_profiles.h \
+    gui_setmanualrpm.h \
+    gui_softwareautosetup.h \
+    hidapi/hidapi/hidapi.h \
+    languages.h \
+    main.h \
+    preferences.h \
+    shubetriaapp.h \
+    softwareauto/fanramp.h \
+    themes.h \
+    timestampedtemperature.h \
+    utils.h
+
 
 FORMS    += gui_mainwindow.ui \
     gui_about.ui \
@@ -179,15 +187,19 @@ macx {
     LIBS += -framework CoreFoundation -framework IOKit
     SOURCES += hidapi/mac/hid.c bfx-recon/mac/fancontrollerio.cpp bfx-recon/mac/smc_temp.cpp bfx-recon/mac/smc.cpp
     HEADERS += bfx-recon/mac/fancontrollerio.h bfx-recon/mac/smc_temp.h bfx-recon/mac/smc.h
-    
     ICON = mac/Shubetria.icns
     APP_QML_FILES.files = mac/qt_menu.nib
     APP_QML_FILES.path = Contents/Resources
     QMAKE_BUNDLE_DATA += APP_QML_FILES
-    
+    DISTFILES += mac/Shubetria.icns
+
 }
 
 OTHER_FILES +=
 
-DISTFILES += \
-    mac/Shubetria.icns
+DISTFILES += translations/shubetria.en_EN.qm \
+    translationse/shubetria.en_US.qm \
+    translations/shubetria.it_IT.qm
+#    translations/shubetria.en_EN.ts \
+#    translations/shubetria.en_US.ts \
+#    translations/shubetria.it_IT.ts \
