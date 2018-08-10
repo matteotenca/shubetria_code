@@ -173,9 +173,7 @@ win32 {
 unix:!macx {
     CONFIG += link_pkgconfig
     PKGCONFIG += libusb-1.0
-    SOURCES += hidapi/libusb/hid.c bfx-recon/linux/fancontrollerio.cpp
-    HEADERS += bfx-recon/linux/fancontrollerio.h
-    INCLUDEPATH += bfx-recon/linux
+    SOURCES += hidapi/libusb/hid.c
     LIBS += -lusb-1.0 -ludev -lrt
 }
 
