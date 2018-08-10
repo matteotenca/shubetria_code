@@ -15,10 +15,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += printsupport
 TARGET = Shubetria
 TEMPLATE = app
 
-TRANSLATIONS =  language/shubetria_de.ts \
-                language/shubetria_en.ts \
-                language/shubetria_it.ts \
-                translations/shubetria.it_IT.ts \
+TRANSLATIONS =  translations/shubetria.it_IT.ts \
                 translations/shubetria.en_US.ts \
                 translations/shubetria.en_EN.ts
 
@@ -140,7 +137,8 @@ FORMS    += gui_mainwindow.ui \
 
 RESOURCES += \
     gui_resources.qrc \
-    gui_languages.qrc \
+    gui_locale.qrc \
+#    gui_languages.qrc \
     gui_help.qrc
 
 #-------------------------------------------------

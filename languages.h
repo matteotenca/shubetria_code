@@ -8,9 +8,9 @@ class Languages
 public:
     Languages();
 
-    QStringList getSupportedLanguagesList(void);
-    QString convertLanguageToFile(QString lang);
-    QString convertFileToLanguage(QString file);
+//    QStringList getSupportedLanguagesList(void);
+//    QString convertLanguageToFile(QString lang);
+//    QString convertFileToLanguage(QString file);
 
 private:
 

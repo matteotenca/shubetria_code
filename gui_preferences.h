@@ -50,7 +50,7 @@ private:
 
     void populateProfileComboBoxes(void);
     void populateThemesComboBox(void);
-    void populateLanguageComboBox(void);
+//    void populateLanguageComboBox(void);
     void done(int result);
 };
 

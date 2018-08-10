@@ -67,8 +67,8 @@ gui_MainWindow::gui_MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::gui_MainWindow)
 {
-    translator.load(ph_prefs().applicationLanguage());
-    ShubetriaApp::installTranslator(&translator);
+//    translator.load(ph_prefs().applicationLanguage());
+//    ShubetriaApp::installTranslator(&translator);
 
     ui->setupUi(this);
     restoreGeometry(ph_prefs().windowGeometry());
@@ -886,9 +886,9 @@ void gui_MainWindow::changeEvent(QEvent* e)
             }
         }
         break;
-    case QEvent::LanguageChange:
-        ui->retranslateUi(this);
-        break;
+//    case QEvent::LanguageChange:
+//        ui->retranslateUi(this);
+//        break;
     default:
         break;
     }
@@ -1348,13 +1348,13 @@ void gui_MainWindow::when_actionPreferences_selected()
     updateChannelControlTooltips();
     updateAllSpeedCtrls();
 
-    ShubetriaApp::removeTranslator(&translator);
-    translator.load(ph_prefs().applicationLanguage());
-    ShubetriaApp::installTranslator(&translator);
+//    ShubetriaApp::removeTranslator(&translator);
+//    translator.load(ph_prefs().applicationLanguage());
+//    ShubetriaApp::installTranslator(&translator);
 
     // "Slight" hack to retranslate the menus :-)
-    this->menuBar()->clear();
-    this->initMenus();
+//    this->menuBar()->clear();
+//    this->initMenus();
 }
 
 void gui_MainWindow::when_actionHelp_selected()

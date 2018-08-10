@@ -39,7 +39,7 @@ static const char* key_windowAboutGeometry          = "UserPrefs/windowAboutGeom
 static const char* key_windowPrefsGeometry          = "UserPrefs/windowPrefsGeometry";
 static const char* key_windowDiagGeometry        = "UserPrefs/windowDiagGeometry";
 static const char* key_windowHelpGeometry        = "UserPrefs/windowHelpGeometry";
-static const char* key_applicationLanguage      = "UserPrefs/applicationLanguage";
+//static const char* key_applicationLanguage      = "UserPrefs/applicationLanguage";
 
 static const char* keyBase_channelName          = "UserPrefs/channelName";
 static const char* keyBase_probeName            = "UserPrefs/probeName";
@@ -155,10 +155,10 @@ QByteArray Preferences::windowHelpGeometry(QByteArray defaultVal) const
     return m_settings.value(key_windowHelpGeometry, defaultVal).toByteArray();
 }
 
-QString Preferences::applicationLanguage(QString defaultVal) const
-{
-    return m_settings.value(key_applicationLanguage, defaultVal).toString();
-}
+//QString Preferences::applicationLanguage(QString defaultVal) const
+//{
+//    return m_settings.value(key_applicationLanguage, defaultVal).toString();
+//}
 
 QString Preferences::channelName(unsigned channel, QString defaultVal) const
 {
@@ -291,12 +291,12 @@ void Preferences::setWindowHelpGeometry(const QByteArray& windowGeometry)
     m_settings.setValue(key_windowHelpGeometry, windowGeometry);
 }
 
-void Preferences::setApplicationLanguage(const QString& language)
-{
-    Languages lang;
-    QString languageFile = lang.convertLanguageToFile(language);
-    m_settings.setValue(key_applicationLanguage, languageFile);
-}
+//void Preferences::setApplicationLanguage(const QString& language)
+//{
+//    Languages lang;
+//    QString languageFile = lang.convertLanguageToFile(language);
+//    m_settings.setValue(key_applicationLanguage, languageFile);
+//}
 
 void Preferences::setChannelName(unsigned channel, const QString& name)
 {

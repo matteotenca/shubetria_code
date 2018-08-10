@@ -66,7 +66,7 @@ public:
     QByteArray windowPrefsGeometry(QByteArray defaultVal = "") const;
     QByteArray windowDiagGeometry(QByteArray defaultVal = "") const;
     QByteArray windowHelpGeometry(QByteArray defaultVal = "") const;
-    QString applicationLanguage(QString defaultVal = "") const;
+//    QString applicationLanguage(QString defaultVal = "") const;
     QString channelName(unsigned channel, QString defaultVal = "") const;
     QString probeName(unsigned channel, QString defaultVal = "") const;
     QString stylesheet(void) const;
@@ -87,7 +87,7 @@ public:
     void setWindowPrefsGeometry(const QByteArray& windowGeometry);
     void setWindowDiagGeometry(const QByteArray& windowGeometry);
     void setWindowHelpGeometry(const QByteArray& windowGeometry);
-    void setApplicationLanguage(const QString& language);
+//    void setApplicationLanguage(const QString& language);
     void setStartupProfile(const QString& profileName);
     void setShutdownProfile(const QString& profileName);
     void setChannelName(unsigned channel, const QString& name);

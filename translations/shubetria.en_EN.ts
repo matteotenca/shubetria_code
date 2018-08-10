@@ -658,100 +658,100 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="131"/>
+        <location filename="../gui_mainwindow.ui" line="128"/>
         <source>Profile: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="157"/>
+        <location filename="../gui_mainwindow.ui" line="154"/>
         <source>Reset FanControllerData</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="164"/>
+        <location filename="../gui_mainwindow.ui" line="161"/>
         <source>Basic Diagnostics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="171"/>
+        <location filename="../gui_mainwindow.ui" line="168"/>
         <source>Sync UI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="218"/>
+        <location filename="../gui_mainwindow.ui" line="215"/>
         <source>Toggle temperature scale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="252"/>
+        <location filename="../gui_mainwindow.ui" line="249"/>
         <source>Toggle alarm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="310"/>
+        <location filename="../gui_mainwindow.ui" line="307"/>
         <source>Toggle profile state</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="344"/>
+        <location filename="../gui_mainwindow.ui" line="341"/>
         <source>Manage profiles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="399"/>
+        <location filename="../gui_mainwindow.ui" line="396"/>
         <source>Toggle software profile state</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="430"/>
+        <location filename="../gui_mainwindow.ui" line="427"/>
         <source>Configure Software Auto (Ramps)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="528"/>
-        <location filename="../gui_mainwindow.ui" line="755"/>
-        <location filename="../gui_mainwindow.ui" line="982"/>
-        <location filename="../gui_mainwindow.ui" line="1209"/>
-        <location filename="../gui_mainwindow.ui" line="1436"/>
+        <location filename="../gui_mainwindow.ui" line="525"/>
+        <location filename="../gui_mainwindow.ui" line="752"/>
+        <location filename="../gui_mainwindow.ui" line="979"/>
+        <location filename="../gui_mainwindow.ui" line="1206"/>
+        <location filename="../gui_mainwindow.ui" line="1433"/>
         <source>Temperature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="677"/>
+        <location filename="../gui_mainwindow.ui" line="674"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="707"/>
-        <location filename="../gui_mainwindow.ui" line="934"/>
-        <location filename="../gui_mainwindow.ui" line="1161"/>
-        <location filename="../gui_mainwindow.ui" line="1388"/>
-        <location filename="../gui_mainwindow.ui" line="1622"/>
+        <location filename="../gui_mainwindow.ui" line="704"/>
+        <location filename="../gui_mainwindow.ui" line="931"/>
+        <location filename="../gui_mainwindow.ui" line="1158"/>
+        <location filename="../gui_mainwindow.ui" line="1385"/>
+        <location filename="../gui_mainwindow.ui" line="1619"/>
         <source>Alarm Temperature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="904"/>
+        <location filename="../gui_mainwindow.ui" line="901"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="1131"/>
+        <location filename="../gui_mainwindow.ui" line="1128"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="1358"/>
+        <location filename="../gui_mainwindow.ui" line="1355"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="1592"/>
+        <location filename="../gui_mainwindow.ui" line="1589"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_mainwindow.ui" line="1648"/>
+        <location filename="../gui_mainwindow.ui" line="1645"/>
         <location filename="../gui_mainwindow.cpp" line="212"/>
         <source>About</source>
         <translation type="unfinished"></translation>
@@ -925,107 +925,102 @@ The profile has NOT been saved!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="104"/>
+        <location filename="../gui_preferences.ui" line="113"/>
         <source>General Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="113"/>
+        <location filename="../gui_preferences.ui" line="122"/>
         <source>Channel Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="122"/>
+        <location filename="../gui_preferences.ui" line="131"/>
         <source>Appearance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="153"/>
+        <location filename="../gui_preferences.ui" line="162"/>
         <source>Startup Profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="179"/>
+        <location filename="../gui_preferences.ui" line="188"/>
         <source>Shutdown Profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="228"/>
+        <location filename="../gui_preferences.ui" line="237"/>
         <source>Show Tooltips while Minimized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="254"/>
+        <location filename="../gui_preferences.ui" line="263"/>
         <source>Minimize to Tray</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="261"/>
+        <location filename="../gui_preferences.ui" line="270"/>
         <source>Start Minimized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="268"/>
+        <location filename="../gui_preferences.ui" line="277"/>
         <source>Quit on Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="305"/>
+        <location filename="../gui_preferences.ui" line="314"/>
         <source>Always Show Tray Icon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="316"/>
+        <location filename="../gui_preferences.ui" line="325"/>
         <source>RPM sliders use logarithmic scale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="361"/>
+        <location filename="../gui_preferences.ui" line="379"/>
         <source>Channel 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="380"/>
+        <location filename="../gui_preferences.ui" line="398"/>
         <source>Channel 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="387"/>
+        <location filename="../gui_preferences.ui" line="405"/>
         <source>Channel 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="394"/>
+        <location filename="../gui_preferences.ui" line="412"/>
         <source>Channel 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="401"/>
+        <location filename="../gui_preferences.ui" line="419"/>
         <source>Channel 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="423"/>
+        <location filename="../gui_preferences.ui" line="441"/>
         <source>Fan Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="430"/>
+        <location filename="../gui_preferences.ui" line="448"/>
         <source>Temperature Probe</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="447"/>
+        <location filename="../gui_preferences.ui" line="472"/>
         <source>Style</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../gui_preferences.ui" line="454"/>
-        <source>Language</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../gui_preferences.ui" line="497"/>
+        <location filename="../gui_preferences.ui" line="505"/>
         <source>Show Channel Labels</source>
         <translation type="unfinished"></translation>
     </message>

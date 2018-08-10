@@ -34,7 +34,7 @@ gui_Preferences::gui_Preferences(QWidget *parent) :
     ui->ctrl_preferenceTabList->setCurrentRow(0);
     populateProfileComboBoxes();
     populateThemesComboBox();
-    populateLanguageComboBox();
+//    populateLanguageComboBox();
     initControls();
 
     // FIXME: Hiding controls for non-working preferences
@@ -50,7 +50,7 @@ gui_Preferences::~gui_Preferences()
 
 void gui_Preferences::initControls(void)
 {
-    Languages lang;
+//    Languages lang;
     ui->ctrl_minimizeOnStart->setChecked(ph_prefs().startMinimized());
     ui->ctrl_minimizeToTray->setChecked(ph_prefs().minimizeToTray());
     ui->ctrl_alwaysShowTrayIcon->setChecked(ph_prefs().alwaysShowTrayIcon());
@@ -68,11 +68,11 @@ void gui_Preferences::initControls(void)
     if (!profileName.isEmpty())
         ui->ctrl_shutdownProfile->setCurrentIndex(ui->ctrl_shutdownProfile->findText(profileName));
 
-    QString languageName;
+//    QString languageName;
 
-    languageName = lang.convertFileToLanguage(ph_prefs().applicationLanguage());
-    if (!languageName.isEmpty())
-        ui->ctrl_language->setCurrentIndex(ui->ctrl_language->findText(languageName));
+//    languageName = lang.convertFileToLanguage(ph_prefs().applicationLanguage());
+//    if (!languageName.isEmpty())
+//        ui->ctrl_language->setCurrentIndex(ui->ctrl_language->findText(languageName));
 
     ui->ctrl_channel1FanName->setText(ph_prefs().channelName(0));
     ui->ctrl_channel2FanName->setText(ph_prefs().channelName(1));
@@ -148,20 +148,20 @@ void gui_Preferences::populateThemesComboBox(void)
     }
 }
 
-void gui_Preferences::populateLanguageComboBox(void)
-{
-    ui->ctrl_language->clear();
+//void gui_Preferences::populateLanguageComboBox(void)
+//{
+//    ui->ctrl_language->clear();
 
-    Languages lang;
-    QString language;
-    QStringList languages = lang.getSupportedLanguagesList();
+//    Languages lang;
+//    QString language;
+//    QStringList languages = lang.getSupportedLanguagesList();
 
-    foreach(language, languages)
-    {
-        QString icon=QString(":/language/%1.png").arg(language);
-        ui->ctrl_language->addItem(QIcon(icon), language);
-    }
-}
+//    foreach(language, languages)
+//    {
+//        QString icon=QString(":/language/%1.png").arg(language);
+//        ui->ctrl_language->addItem(QIcon(icon), language);
+//    }
+//}
 
 
 
@@ -187,7 +187,7 @@ void gui_Preferences::commitChanges(void) const
     else
         txt = ui->ctrl_shutdownProfile->currentText();
     ph_prefs().setShutdownProfile(txt);
-    ph_prefs().setApplicationLanguage(ui->ctrl_language->currentText());
+//    ph_prefs().setApplicationLanguage(ui->ctrl_language->currentText());
 
     ph_prefs().setChannelName(0, ui->ctrl_channel1FanName->text());
     ph_prefs().setChannelName(1, ui->ctrl_channel2FanName->text());
