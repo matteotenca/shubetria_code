@@ -655,57 +655,57 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../gui_mainwindow.ui" line="26"/>
         <source>Shubetria - BitFenix Recon Fan Controller</source>
-        <translation>Cuccodoro</translation>
+        <translation>Shubetria - BitFenix Recon Fan Controller</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="128"/>
         <source>Profile: </source>
-        <translation type="unfinished"></translation>
+        <translation>Profilo: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="154"/>
         <source>Reset FanControllerData</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="161"/>
         <source>Basic Diagnostics</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="168"/>
         <source>Sync UI</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="215"/>
         <source>Toggle temperature scale</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia scala dei gradi</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="249"/>
         <source>Toggle alarm</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva/Disattiva Allarme</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="307"/>
         <source>Toggle profile state</source>
-        <translation type="unfinished"></translation>
+        <translation>Cmbia stato del profilo</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="341"/>
         <source>Manage profiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestisci Profili</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="396"/>
         <source>Toggle software profile state</source>
-        <translation type="unfinished"></translation>
+        <translation>Attiva il controllo software dei profili</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="427"/>
         <source>Configure Software Auto (Ramps)</source>
-        <translation type="unfinished"></translation>
+        <translation>Configure curve automatiche software</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="525"/>
@@ -714,12 +714,12 @@ p, li { white-space: pre-wrap; }
         <location filename="../gui_mainwindow.ui" line="1206"/>
         <location filename="../gui_mainwindow.ui" line="1433"/>
         <source>Temperature</source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatura</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="674"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="704"/>
@@ -728,33 +728,33 @@ p, li { white-space: pre-wrap; }
         <location filename="../gui_mainwindow.ui" line="1385"/>
         <location filename="../gui_mainwindow.ui" line="1619"/>
         <source>Alarm Temperature</source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatura d&apos;allarme</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="901"/>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="1128"/>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="1355"/>
         <source>4</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="1589"/>
         <source>5</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="1645"/>
         <location filename="../gui_mainwindow.cpp" line="212"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Su Shubetria</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="87"/>
@@ -783,32 +783,32 @@ Please check preferences.</source>
     <message>
         <location filename="../gui_mainwindow.cpp" line="181"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>File</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="184"/>
         <source>Load Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Carica profilo</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="191"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="197"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Esci</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="202"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="205"/>
         <source>Shubetria Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Aiuto Shubetria</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="207"/>
@@ -828,22 +828,22 @@ Please check preferences.</source>
     <message>
         <location filename="../gui_mainwindow.cpp" line="495"/>
         <source>Current RPM: </source>
-        <translation type="unfinished"></translation>
+        <translation>RPM attuali: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="499"/>
         <source>Target RPM: </source>
-        <translation type="unfinished"></translation>
+        <translation>RPM desiderati: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="511"/>
         <source>Min Temp: </source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatura minima: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="517"/>
         <source>Max Temp: </source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatura massima: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="523"/>
