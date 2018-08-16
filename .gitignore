@@ -29,3 +29,8 @@ qrc_gui*
 Shubetria
 .xcode
 Shubetria.xcodeproj
+project.pbxproj
+*.xcsettings
+qt_makeqmake.mak
+qt_preprocess.mak
+xcshareddata/xcschemes/Shubetria.xcscheme
