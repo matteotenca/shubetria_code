@@ -27,3 +27,5 @@ moc_*
 *.swp
 qrc_gui*
 Shubetria
+.xcode
+Shubetria.xcodeproj
