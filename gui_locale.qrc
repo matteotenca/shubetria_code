@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>translations/shubetria.en_EN.qm</file>
 				<file>translations/shubetria.en_US.qm</file>
 				<file>translations/shubetria.it_IT.qm</file>
     </qresource>

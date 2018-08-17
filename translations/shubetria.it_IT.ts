@@ -655,7 +655,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../gui_mainwindow.ui" line="26"/>
         <source>Shubetria - BitFenix Recon Fan Controller</source>
-        <translation>Shubetria - BitFenix Recon Fan Controller</translation>
+        <translation>ITA Shubetria - BitFenix Recon Fan Controller</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.ui" line="128"/>
@@ -759,17 +759,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../gui_mainwindow.cpp" line="87"/>
         <source>Profile database error.</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore nel database dei profili.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="88"/>
         <source>The profile database could not be initialised or another error has occurred. Profile management will not work!</source>
-        <translation type="unfinished"></translation>
+        <translation>Il database dei profili non puo&apos; essere inizializzato, o un altro genere di errore impedisce il funzionamento della gestione profili!</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="106"/>
         <source>Could not switch to startup profile.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non posso attivare il profilo di avvio.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="107"/>
@@ -778,7 +778,11 @@ p, li { white-space: pre-wrap; }
 Profile name: %1
 
 Please check preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non posso attivare il profilo di avvio. Il profilo potrebbe non esistere.
+
+Nome profilo: %1
+
+Controllare le impostazioni.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="181"/>
@@ -813,17 +817,17 @@ Please check preferences.</source>
     <message>
         <location filename="../gui_mainwindow.cpp" line="207"/>
         <source>Diagnostic Report</source>
-        <translation type="unfinished"></translation>
+        <translation>Report Diagnostico</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="280"/>
         <source>Load profile</source>
-        <translation type="unfinished"></translation>
+        <translation>Carica profilo</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="324"/>
         <source>More...</source>
-        <translation type="unfinished"></translation>
+        <translation>Altro...</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="495"/>
@@ -848,17 +852,17 @@ Please check preferences.</source>
     <message>
         <location filename="../gui_mainwindow.cpp" line="523"/>
         <source>Min logged RPM: </source>
-        <translation type="unfinished"></translation>
+        <translation>RPM minime rilevate: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="527"/>
         <source>Max logged RPM: </source>
-        <translation type="unfinished"></translation>
+        <translation>RPM massime rilevate: </translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="939"/>
         <source>Not switching to shutdown profile.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non posso passare al profilo di uscita.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="940"/>
@@ -867,12 +871,16 @@ Please check preferences.</source>
 Profile name: %1
 
 Removing the profile from preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il profilo scelto e&apos; un profilo Software che richiede che Shubetria sia attivo.
+
+Nome profilo: %1
+
+Rimuovo il profilo dalle preferenze.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="958"/>
         <source>Could not switch to shutdown profile.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non posso passare al profilo di uscita.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="959"/>
@@ -881,40 +889,47 @@ Removing the profile from preferences.</source>
 Profile name: %1
 
 Please check preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Non posso attivare il profilo di uscita. Il profilo potrebbe non esistere.
+
+Nome profilo: %1
+
+Controllare le impostazioni.</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="1197"/>
         <source>Enter new alarm temperature %1 for channel %2.
 Range is %3 to %4</source>
-        <translation type="unfinished"></translation>
+        <translation>Inserire la nuova temperatura di allarme %1 per il canale %2.
+L&apos;intervallo e&apos; tra %3 e %4</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="1205"/>
         <source>Enter alarm temperature</source>
-        <translation type="unfinished"></translation>
+        <translation>Inserore la temperatura di allarme</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="1380"/>
         <source>Load profile failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Caricamento del profilo fallito</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="1381"/>
         <source>An error occurred load the profile.
 The profile has not been loaded!</source>
-        <translation type="unfinished"></translation>
+        <translation>Si e&apos; verificato un errore nel caricamento del profilo.
+Il profilo non e&apos; stato caricato!</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="1393"/>
         <source>Save failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvataggio fallito</translation>
     </message>
     <message>
         <location filename="../gui_mainwindow.cpp" line="1394"/>
         <source>An error occurred saving the profile.
 The profile has NOT been saved!</source>
-        <translation type="unfinished"></translation>
+        <translation>Si e&apos; verificato un errore nel salvataggio del profilo.
+Il profilo NON e&apos; stato salvato!</translation>
     </message>
 </context>
 <context>

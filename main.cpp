@@ -47,16 +47,16 @@ int main(int argc, char *argv[])
     //    QString lan = mylocale.language();
     QString locale = QLocale::system().name();
     //    QString langfilename = "test_" + locale;
-     QString langfilename = "shubetria." + locale;
-//    QString langfilename = "shubetria";
+//     QString langfilename = "shubetria." + locale;
+    QString langfilename = "shubetria";
     QString langfilepath = ":/translations";
     QString langprefix = ".";
     bool test = false;
     QString tifotto = QDir::currentPath();
     QStringList langlist = mylocale.uiLanguages();
     QTranslator translator;
-    //    test = translator.load(mylocale, langfilename, langprefix, langfilepath);
-    test = translator.load(langfilename, langfilepath);;
+    test = translator.load(mylocale, langfilename, langprefix, langfilepath);
+    // test = translator.load(langfilename, langfilepath);;
 //    test = translator.
     //    if ( ! test) {
     //        printf("%s", "Error.");

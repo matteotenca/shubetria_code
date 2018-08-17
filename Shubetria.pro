@@ -16,8 +16,8 @@ TARGET = Shubetria
 TEMPLATE = app
 
 TRANSLATIONS =  translations/shubetria.it_IT.ts \
-                translations/shubetria.en_US.ts \
-                translations/shubetria.en_EN.ts
+                translations/shubetria.en_US.ts
+#                translations/shubetria.en_EN.ts
 
 
 PREFIX = /usr
@@ -25,15 +25,9 @@ BINDIR = $$PREFIX/bin
 DATADIR = $$PREFIX/share
 ICONDIR = $$DATADIR/icons/hicolor
 
-INSTALLS += target desktop udev icon16 icon22 icon32 icon48 icon64 icon128 icon256 pixmap
+INSTALLS += target icon16 icon22 icon32 icon48 icon64 icon128 icon256 pixmap
 
 target.path = $${BINDIR}
-
-desktop.path = $${DATADIR}/applications
-desktop.files += $${TARGET}.desktop
-
-udev.path = /etc/udev/rules.d
-udev.files += 99-fancontroller.rules
 
 icon16.path = $${ICONDIR}/16x16/apps
 icon16.files += Images/icons/16x16/shubetria.png
@@ -177,6 +171,11 @@ unix:!macx {
     HEADERS += bfx-recon/linux/fancontrollerio.h
     INCLUDEPATH += bfx-recon/linux
     LIBS += -lusb-1.0 -ludev -lrt
+    INSTALLS += desktop udev
+    desktop.path = $${DATADIR}/applications
+    desktop.files += $${TARGET}.desktop
+    udev.path = /etc/udev/rules.d
+    udev.files += 99-fancontroller.rules
 }
 
 macx {
@@ -198,9 +197,9 @@ macx {
 
 OTHER_FILES +=
 
-DISTFILES += translations/shubetria.en_EN.qm \
-    translationse/shubetria.en_US.qm \
-    translations/shubetria.it_IT.qm
+DISTFILES += translations/shubetria.en_US.ts \
+    translations/shubetria.it_IT.ts
+#    translations/shubetria.en_US.qm \
+#    translations/shubetria.it_IT.qm
+#   translations/shubetria.en_EN.qm \
 #    translations/shubetria.en_EN.ts \
-#    translations/shubetria.en_US.ts \
-#    translations/shubetria.it_IT.ts \
