@@ -187,6 +187,7 @@ macx {
     LIBS += -framework CoreFoundation -framework IOKit
     SOURCES += hidapi/mac/hid.c bfx-recon/mac/fancontrollerio.cpp bfx-recon/mac/smc_temp.cpp bfx-recon/mac/smc.cpp
     HEADERS += bfx-recon/mac/fancontrollerio.h bfx-recon/mac/smc_temp.h bfx-recon/mac/smc.h
+    INCLUDEPATH += bfx-recon/mac
     ICON = mac/Shubetria.icns
     APP_QML_FILES.files = mac/qt_menu.nib
     APP_QML_FILES.path = Contents/Resources

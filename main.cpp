@@ -38,12 +38,11 @@ void CloseHelper::onLastWindowClosed(void)
     ph_shutdown();
 }
 
-
 int main(int argc, char *argv[])
 {
 
     ShubetriaApp a(argc, argv);
-    QTranslator translator;
+    
     QLocale mylocale;
     //    QString lan = mylocale.language();
     QString locale = QLocale::system().name();
@@ -55,8 +54,10 @@ int main(int argc, char *argv[])
     bool test = false;
     QString tifotto = QDir::currentPath();
     QStringList langlist = mylocale.uiLanguages();
-//    test = translator.load(mylocale, langfilename, langprefix, langfilepath);
-     test = translator.load(langfilename, langfilepath);
+    QTranslator translator;
+    //    test = translator.load(mylocale, langfilename, langprefix, langfilepath);
+    test = translator.load(langfilename, langfilepath);;
+//    test = translator.
     //    if ( ! test) {
     //        printf("%s", "Error.");
     //        exit(1);

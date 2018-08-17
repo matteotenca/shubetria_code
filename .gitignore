@@ -34,3 +34,5 @@ project.pbxproj
 qt_makeqmake.mak
 qt_preprocess.mak
 xcshareddata/xcschemes/Shubetria.xcscheme
+Shubetria.vcxproj.filters
+Shubetria.vcxproj.filters
