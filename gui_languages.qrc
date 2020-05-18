@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>language/shubetria_de.qm</file>
-        <file>language/shubetria_en.qm</file>
-        <file>language/English.png</file>
-        <file>language/German.png</file>
-        <file>language/shubetria_it.qm</file>
-    </qresource>
-</RCC>

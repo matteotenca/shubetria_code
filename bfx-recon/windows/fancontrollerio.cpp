@@ -352,63 +352,63 @@ int FanControllerIO::readCpuTemp(char probetemp, int channel)
      int temp = 0;
      UINT index;
 
-     if ( channel != 2 ) {
-         temp = probetemp;
-#ifdef QT_DEBUG
-         qDebug() << "Channel: "
-                 <<  QString::number(channel)
-                 << "Reporting probetemp: "
-                 <<  QString::number(temp);
-#endif
-     }
-     else {
+//     if ( channel != 2 ) {
+//         temp = probetemp;
+//#ifdef QT_DEBUG
+//         qDebug() << "Channel: "
+//                 <<  QString::number(channel)
+//                 << "Reporting probetemp: "
+//                 <<  QString::number(temp);
+//#endif
+//     }
+//     else {
+    // (c) Shub 2020
+     if (ctp.GetData()) {
 
-         if (ctp.GetData()) {
-
-             for (UINT i = 0; i < ctp.GetCPUCount(); i++)
+         for (UINT i = 0; i < ctp.GetCPUCount(); i++)
+         {
+             for (UINT g = 0; g < ctp.GetCoreCount(); g++)
              {
-                 for (UINT g = 0; g < ctp.GetCoreCount(); g++)
-                 {
-                     index = g + (i * ctp.GetCoreCount());
-                     tmp = static_cast<int>(ctp.GetTemp(static_cast<int>(index)));
-                     if (tmp > high) { high = tmp; }
-                 }
+                 index = g + (i * ctp.GetCoreCount());
+                 tmp = static_cast<int>(ctp.GetTemp(static_cast<int>(index)));
+                 if (tmp > high) { high = tmp; }
              }
+         }
 
-             if (ctp.IsFahrenheit()) {
+         if (ctp.IsFahrenheit()) {
 
 #ifdef QT_DEBUG
-                 qDebug() << "coretemp is °F " "temp:" << high;
+             qDebug() << "coretemp is °F " "temp:" << high;
 #endif
 
-                 //to = FanControllerData::toCelcius_ct(high);
-                 temp = high;
-             }
-             else {
-#ifdef QT_DEBUG
-                 qDebug() << "coretemp is °C " "temp:" << high;
-#endif
-                 temp = (int) ceil( high * 9/5.0 + 32);
-#ifdef QT_DEBUG
-                 qDebug() << "coretemp is now °F " "temp:" << temp;
-#endif
-             }
-#ifdef QT_DEBUG
-             qDebug() << "Channel: "
-                 <<  QString::number(channel)
-                 << "Reporting cpu temp: "
-                 <<  QString::number(temp);
-#endif
-
+             //to = FanControllerData::toCelcius_ct(high);
+             temp = high;
          }
          else {
-             // Display DLL related errors.
-              qDebug() << "Error: Core Temp's shared memory could not be read";
-              qDebug() << "Error number: "
-                       << QString::number(ctp.GetDllError());
-             //wprintf(L"Error description: %s\n", ctp.GetErrorMessage());
+#ifdef QT_DEBUG
+             qDebug() << "coretemp is °C " "temp:" << high;
+#endif
+             temp = (int) ceil( high * 9/5.0 + 32);
+#ifdef QT_DEBUG
+             qDebug() << "coretemp is now °F " "temp:" << temp;
+#endif
          }
+#ifdef QT_DEBUG
+         qDebug() << "Channel: "
+             <<  QString::number(channel)
+             << "Reporting cpu temp: "
+             <<  QString::number(temp);
+#endif
+
      }
+     else {
+         // Display DLL related errors.
+          qDebug() << "Error: Core Temp's shared memory could not be read";
+          qDebug() << "Error number: "
+                   << QString::number(ctp.GetDllError());
+         //wprintf(L"Error description: %s\n", ctp.GetErrorMessage());
+     }
+//     }
 
     return temp;
 }
