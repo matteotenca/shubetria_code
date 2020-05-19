@@ -9,8 +9,8 @@ debug/*
 ui_gui*.h
 *.md5
 *.bat
-Windows/coretemp/*
-!Windows/coretemp/*.md
+#Windows/coretemp/*
+#!Windows/coretemp/*.md
 *.stash
 *.user
 .DS_Store
@@ -37,3 +37,4 @@ xcshareddata/xcschemes/Shubetria.xcscheme
 Shubetria.vcxproj.filters
 Shubetria.vcxproj.filters
 Shubetria.app
+
