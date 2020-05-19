@@ -3,7 +3,7 @@
 
 A fork of the Phoebetria project on SourceForge
 
-(C) 2018 by Shub - Matteo Tenca
+(C) 2020 by Shub - Matteo Tenca
                         
 ## Introduction
 
@@ -56,7 +56,7 @@ GitHub
 
 ## License
 
-Copyright © 2018 by Shub aka Matteo Tenca.
+Copyright © 2020 by Shub aka Matteo Tenca.
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the
@@ -72,4 +72,4 @@ You should have received a copy of the GNU General Public License along
 with this program. If not, see http://www.gnu.org/licenses/.
 
 
-Last revised: 20180806
+Last revised: 20200519
